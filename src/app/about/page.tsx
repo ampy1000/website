@@ -51,7 +51,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="space-y-6">
-              <div className="bg-surface-alt p-7 border border-border">
+              <div className="bg-surface-alt rounded-2xl p-7 border border-border">
                 <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Education</h3>
                 <div className="space-y-5">
                   <div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-surface-alt p-7 border border-border">
+              <div className="bg-surface-alt rounded-2xl p-7 border border-border">
                 <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Recognition</h3>
                 <div>
                   <p className="font-semibold text-foreground">ACHE of Central Florida Regent&apos;s Award</p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 text: "Orchestrating the collaboration between design and product teams, ensuring innovations directly improve the healthcare experience.",
               },
             ].map((item) => (
-              <div key={item.title} className="p-7 border border-border hover:border-accent/40 transition-colors bg-surface">
+              <div key={item.title} className="rounded-2xl p-7 border border-border hover:border-accent/40 transition-colors bg-surface">
                 <h3 className="font-semibold text-foreground mb-3">{item.title}</h3>
                 <p className="text-sm text-muted leading-relaxed">{item.text}</p>
               </div>
@@ -127,13 +127,13 @@ export default function AboutPage() {
           </p>
           <h2 className="font-serif text-2xl font-bold text-foreground mb-10">Key Beliefs</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <blockquote className="border-l-2 border-accent pl-6">
+            <blockquote className="border-l-2 border-accent rounded-r-2xl bg-surface-alt/50 pl-6 pr-6 py-6">
               <p className="text-body leading-relaxed italic font-serif text-lg">
                 &ldquo;Realize the value of a strong network &mdash; you can accomplish so much
                 more with a diverse group than you can alone.&rdquo;
               </p>
             </blockquote>
-            <blockquote className="border-l-2 border-accent pl-6">
+            <blockquote className="border-l-2 border-accent rounded-r-2xl bg-surface-alt/50 pl-6 pr-6 py-6">
               <p className="text-body leading-relaxed italic font-serif text-lg">
                 &ldquo;Feedback is a gift &mdash; the sooner and more often you&apos;re willing
                 to get it, the better the outcome of the product.&rdquo;

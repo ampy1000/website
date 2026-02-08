@@ -71,15 +71,15 @@ export default function ExperiencePage() {
           <div className="space-y-8">
             {experiences.map((exp, i) => (
               <div key={i} className="relative">
-                <div className="bg-surface-alt p-8 border border-border hover:border-accent/40 transition-colors">
+                <div className="bg-surface-alt rounded-2xl p-8 border border-border hover:border-accent/40 transition-colors">
                   <div className="flex flex-wrap items-start gap-3 mb-4">
                     {exp.type === "current" && (
-                      <span className="inline-block px-3 py-1 bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
+                      <span className="inline-block px-3 py-1 rounded-full bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
                         Current
                       </span>
                     )}
                     {exp.type === "leadership" && (
-                      <span className="inline-block px-3 py-1 bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
+                      <span className="inline-block px-3 py-1 rounded-full bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
                         Leadership
                       </span>
                     )}
@@ -91,7 +91,7 @@ export default function ExperiencePage() {
                   <ul className="space-y-3">
                     {exp.description.map((desc, j) => (
                       <li key={j} className="flex items-start gap-3">
-                        <span className="mt-2 w-1.5 h-px bg-accent flex-shrink-0" />
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
                         <span className="text-body leading-relaxed text-sm">{desc}</span>
                       </li>
                     ))}
@@ -129,7 +129,7 @@ export default function ExperiencePage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="px-4 py-2 bg-abyss text-accent-light text-sm font-medium border border-accent/20"
+                className="px-4 py-2 rounded-full bg-abyss text-accent-light text-sm font-medium border border-accent/20"
               >
                 {skill}
               </span>

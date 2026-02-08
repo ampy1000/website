@@ -38,6 +38,12 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
+        {/* Decorative circles inspired by gallery aesthetic */}
+        <div className="absolute top-16 right-[10%] w-72 h-72 md:w-96 md:h-96 rounded-full bg-accent/5 animate-float pointer-events-none" />
+        <div className="absolute top-32 right-[20%] w-48 h-48 md:w-64 md:h-64 rounded-full bg-accent/10 animate-float-delayed pointer-events-none" />
+        <div className="absolute top-8 right-[8%] w-6 h-6 rounded-full bg-accent/30 animate-float-slow pointer-events-none" />
+        <div className="absolute top-64 right-[5%] w-4 h-4 rounded-full bg-accent-light/20 animate-float pointer-events-none" />
+
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40">
           <div className="max-w-2xl">
             <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
@@ -58,13 +64,13 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center px-7 py-3 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+                className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
               >
                 View More
               </Link>
               <Link
                 href="/experience"
-                className="inline-flex items-center px-7 py-3 border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
+                className="inline-flex items-center px-7 py-3 rounded-full border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
               >
                 My Experience
               </Link>
@@ -88,9 +94,9 @@ export default function Home() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="bg-surface-alt rounded-none p-7 border border-border hover:border-accent/40 transition-colors"
+                className="bg-surface-alt rounded-2xl p-7 border border-border hover:border-accent/40 transition-colors"
               >
-                <div className="w-10 h-10 rounded-none bg-abyss flex items-center justify-center mb-5">
+                <div className="w-10 h-10 rounded-xl bg-abyss flex items-center justify-center mb-5">
                   <svg
                     className="w-5 h-5 text-accent-light"
                     fill="none"
@@ -145,7 +151,7 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
-            <div className="bg-surface border border-border p-8">
+            <div className="bg-surface rounded-2xl border border-border p-8">
               <div className="space-y-8">
                 <div className="border-b border-border pb-6">
                   <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Current Role</p>
@@ -173,7 +179,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
             Collaborators
           </p>
-          <div className="w-12 h-px bg-accent mx-auto mb-10" />
+          <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-10" />
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
             Let&apos;s Connect
           </h2>
@@ -186,13 +192,13 @@ export default function Home() {
               href="https://www.linkedin.com/in/codywales"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-3 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+              className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
             >
               Connect on LinkedIn
             </a>
             <Link
               href="/projects"
-              className="inline-flex items-center px-7 py-3 border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
+              className="inline-flex items-center px-7 py-3 rounded-full border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
             >
               View My Projects
             </Link>

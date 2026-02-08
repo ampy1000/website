@@ -30,7 +30,7 @@ export default function Navigation() {
                 href={link.href}
                 className={`text-xs uppercase tracking-[0.2em] font-medium transition-colors hover:text-accent-light ${
                   pathname === link.href
-                    ? "text-accent-light border-b border-accent-light pb-1"
+                    ? "text-accent-light border-b-2 border-accent-light pb-1"
                     : "text-muted"
                 }`}
               >
@@ -44,7 +44,7 @@ export default function Navigation() {
           href="https://www.linkedin.com/in/codywales"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center px-5 py-2 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+          className="hidden md:inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
         >
           Connect
         </a>
@@ -63,7 +63,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-surface">
+        <div className="md:hidden border-t border-border bg-surface rounded-b-2xl">
           <ul className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -83,7 +83,7 @@ export default function Navigation() {
                 href="https://www.linkedin.com/in/codywales"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-5 py-2 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+                className="inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
               >
                 Connect
               </a>

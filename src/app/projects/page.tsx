@@ -73,9 +73,9 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="bg-surface-alt p-8 border border-border hover:border-accent/40 transition-colors"
+                className="bg-surface-alt rounded-2xl p-8 border border-border hover:border-accent/40 transition-colors"
               >
-                <div className="w-12 h-12 bg-abyss flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl bg-abyss flex items-center justify-center mb-6">
                   <svg
                     className="w-6 h-6 text-accent-light"
                     fill="none"
@@ -101,7 +101,7 @@ export default function ProjectsPage() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-abyss text-muted text-xs font-medium border border-accent/20"
+                      className="px-3 py-1 rounded-full bg-abyss text-muted text-xs font-medium border border-accent/20"
                     >
                       {tag}
                     </span>
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
             Collaboration
           </p>
-          <div className="w-12 h-px bg-accent mx-auto mb-8" />
+          <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-8" />
           <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
             Want to Work Together?
           </h2>
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
             href="https://www.linkedin.com/in/codywales"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-7 py-3 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+            className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
           >
             Get in Touch
           </a>
