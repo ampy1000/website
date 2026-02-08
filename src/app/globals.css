@@ -1,33 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #1a1a1a;
-  --accent: #2563eb;
-  --accent-light: #3b82f6;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --card-bg: #ffffff;
-  --section-alt: #f3f4f6;
+  /* Dark palette tokens */
+  --void: #0c1018;
+  --obsidian: #151c28;
+  --gunmetal: #1e2736;
+  --slate: #2f3b4e;
+  --pewter: #7a8494;
+  --silver: #a0a9b8;
+  --cloud: #dce1ea;
+  --cerulean: #3b82f6;
+  --ice: #7eb8f6;
+  --abyss: #1a2d4a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-accent-light: var(--accent-light);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-  --color-card-bg: var(--card-bg);
-  --color-section-alt: var(--section-alt);
+  --font-sans: 'Inter', 'Inter Fallback';
+  --font-serif: 'Playfair Display', 'Playfair Display Fallback';
+
+  --color-background: var(--void);
+  --color-foreground: var(--cloud);
+  --color-surface: var(--obsidian);
+  --color-surface-alt: var(--gunmetal);
+  --color-accent: var(--cerulean);
+  --color-accent-light: var(--ice);
+  --color-muted: var(--pewter);
+  --color-body: var(--silver);
+  --color-border: var(--slate);
+  --color-card-bg: var(--obsidian);
+  --color-section-alt: var(--gunmetal);
+  --color-abyss: var(--abyss);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--void);
+  color: var(--silver);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--abyss);
+  color: var(--ice);
 }

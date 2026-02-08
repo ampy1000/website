@@ -10,14 +10,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <p className="text-accent font-medium text-sm uppercase tracking-widest mb-4">
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           About Me
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Hey, I&apos;m Cody.
         </h1>
-        <p className="text-lg text-muted leading-relaxed max-w-2xl">
+        <p className="text-lg text-body leading-relaxed max-w-2xl">
           I am an experience designer, business builder and creative. I help
           organizations transform consumer insights into strategic innovation
           that drives business growth.
@@ -25,12 +25,12 @@ export default function AboutPage() {
       </section>
 
       {/* Bio Section */}
-      <section className="bg-section-alt">
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="bg-surface">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <div className="grid md:grid-cols-2 gap-14">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-6">My Story</h2>
-              <div className="space-y-4 text-muted leading-relaxed">
+              <h2 className="font-serif text-2xl font-bold text-foreground mb-6">My Story</h2>
+              <div className="space-y-4 text-body leading-relaxed">
                 <p>
                   My journey into healthcare began when a close friend&apos;s snowmobile accident
                   showed me the profound impact of whole person care. While my pre-med aspirations
@@ -51,24 +51,24 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="space-y-6">
-              <div className="bg-card-bg rounded-xl p-6 border border-border">
-                <h3 className="text-sm uppercase tracking-widest text-muted mb-4">Education</h3>
-                <div className="space-y-4">
+              <div className="bg-surface-alt p-7 border border-border">
+                <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Education</h3>
+                <div className="space-y-5">
                   <div>
                     <p className="font-semibold text-foreground">Master of Business Administration</p>
-                    <p className="text-sm text-accent">Rollins College &ndash; Crummer Graduate School of Business</p>
+                    <p className="text-sm text-accent-light mt-1">Rollins College &ndash; Crummer Graduate School of Business</p>
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Bachelor of Business Administration</p>
-                    <p className="text-sm text-accent">Andrews University</p>
+                    <p className="text-sm text-accent-light mt-1">Andrews University</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-card-bg rounded-xl p-6 border border-border">
-                <h3 className="text-sm uppercase tracking-widest text-muted mb-4">Recognition</h3>
+              <div className="bg-surface-alt p-7 border border-border">
+                <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Recognition</h3>
                 <div>
                   <p className="font-semibold text-foreground">ACHE of Central Florida Regent&apos;s Award</p>
-                  <p className="text-sm text-muted">American College of Healthcare Executives</p>
+                  <p className="text-sm text-muted mt-1">American College of Healthcare Executives</p>
                 </div>
               </div>
             </div>
@@ -78,8 +78,11 @@ export default function AboutPage() {
 
       {/* Approach Section */}
       <section>
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold text-foreground mb-10">My Approach</h2>
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
+            Methodology
+          </p>
+          <h2 className="font-serif text-2xl font-bold text-foreground mb-12">My Approach</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -107,8 +110,8 @@ export default function AboutPage() {
                 text: "Orchestrating the collaboration between design and product teams, ensuring innovations directly improve the healthcare experience.",
               },
             ].map((item) => (
-              <div key={item.title} className="p-6 rounded-xl border border-border hover:shadow-md transition-shadow bg-card-bg">
-                <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
+              <div key={item.title} className="p-7 border border-border hover:border-accent/40 transition-colors bg-surface">
+                <h3 className="font-semibold text-foreground mb-3">{item.title}</h3>
                 <p className="text-sm text-muted leading-relaxed">{item.text}</p>
               </div>
             ))}
@@ -117,18 +120,21 @@ export default function AboutPage() {
       </section>
 
       {/* Key Takeaways */}
-      <section className="bg-foreground text-white">
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold mb-8">Key Beliefs</h2>
+      <section className="bg-surface">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
+            Philosophy
+          </p>
+          <h2 className="font-serif text-2xl font-bold text-foreground mb-10">Key Beliefs</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <blockquote className="border-l-4 border-accent pl-6">
-              <p className="text-gray-300 leading-relaxed italic">
+            <blockquote className="border-l-2 border-accent pl-6">
+              <p className="text-body leading-relaxed italic font-serif text-lg">
                 &ldquo;Realize the value of a strong network &mdash; you can accomplish so much
                 more with a diverse group than you can alone.&rdquo;
               </p>
             </blockquote>
-            <blockquote className="border-l-4 border-accent pl-6">
-              <p className="text-gray-300 leading-relaxed italic">
+            <blockquote className="border-l-2 border-accent pl-6">
+              <p className="text-body leading-relaxed italic font-serif text-lg">
                 &ldquo;Feedback is a gift &mdash; the sooner and more often you&apos;re willing
                 to get it, the better the outcome of the product.&rdquo;
               </p>

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import "./globals.css";
+
+const _inter = Inter({ subsets: ["latin"] });
+const _playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cody Wales | Experience Designer, Business Builder & Creative",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased font-sans">
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
