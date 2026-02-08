@@ -51,14 +51,14 @@ export default function ExperiencePage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <p className="text-accent font-medium text-sm uppercase tracking-widest mb-4">
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           Experience
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Work History
         </h1>
-        <p className="text-lg text-muted leading-relaxed max-w-2xl">
+        <p className="text-lg text-body leading-relaxed max-w-2xl">
           From marketing internships to global innovation strategy at one of the world&apos;s
           leading pharmaceutical companies, my career has been driven by a passion for
           understanding people and creating meaningful experiences.
@@ -66,20 +66,20 @@ export default function ExperiencePage() {
       </section>
 
       {/* Timeline */}
-      <section className="bg-section-alt">
-        <div className="max-w-5xl mx-auto px-6 py-16">
+      <section className="bg-surface">
+        <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="space-y-8">
             {experiences.map((exp, i) => (
               <div key={i} className="relative">
-                <div className="bg-card-bg rounded-xl p-8 border border-border hover:shadow-md transition-shadow">
+                <div className="bg-surface-alt p-8 border border-border hover:border-accent/40 transition-colors">
                   <div className="flex flex-wrap items-start gap-3 mb-4">
                     {exp.type === "current" && (
-                      <span className="inline-block px-3 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full border border-green-200">
+                      <span className="inline-block px-3 py-1 bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
                         Current
                       </span>
                     )}
                     {exp.type === "leadership" && (
-                      <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200">
+                      <span className="inline-block px-3 py-1 bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
                         Leadership
                       </span>
                     )}
@@ -87,12 +87,12 @@ export default function ExperiencePage() {
                   <h3 className="text-xl font-bold text-foreground mb-1">
                     {exp.role}
                   </h3>
-                  <p className="text-accent font-medium mb-4">{exp.company}</p>
+                  <p className="text-accent-light font-medium mb-5">{exp.company}</p>
                   <ul className="space-y-3">
                     {exp.description.map((desc, j) => (
                       <li key={j} className="flex items-start gap-3">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                        <span className="text-muted leading-relaxed text-sm">{desc}</span>
+                        <span className="mt-2 w-1.5 h-px bg-accent flex-shrink-0" />
+                        <span className="text-body leading-relaxed text-sm">{desc}</span>
                       </li>
                     ))}
                   </ul>
@@ -105,8 +105,11 @@ export default function ExperiencePage() {
 
       {/* Skills */}
       <section>
-        <div className="max-w-5xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold text-foreground mb-8">Skills & Expertise</h2>
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
+            Capabilities
+          </p>
+          <h2 className="font-serif text-2xl font-bold text-foreground mb-10">Skills & Expertise</h2>
           <div className="flex flex-wrap gap-3">
             {[
               "Customer Experience (CX)",
@@ -126,7 +129,7 @@ export default function ExperiencePage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="px-4 py-2 bg-blue-50 text-accent text-sm font-medium rounded-lg border border-blue-100"
+                className="px-4 py-2 bg-abyss text-accent-light text-sm font-medium border border-accent/20"
               >
                 {skill}
               </span>

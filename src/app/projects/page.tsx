@@ -53,31 +53,31 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <p className="text-accent font-medium text-sm uppercase tracking-widest mb-4">
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           Projects
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Things I&apos;ve Built
         </h1>
-        <p className="text-lg text-muted leading-relaxed max-w-2xl">
+        <p className="text-lg text-body leading-relaxed max-w-2xl">
           From redesigning healthcare websites to launching podcasts and entertainment
           ventures, here are some of the projects I&apos;m most proud of.
         </p>
       </section>
 
       {/* Projects Grid */}
-      <section className="bg-section-alt">
-        <div className="max-w-5xl mx-auto px-6 py-16">
+      <section className="bg-surface">
+        <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="bg-card-bg rounded-xl p-8 border border-border hover:shadow-lg transition-shadow"
+                className="bg-surface-alt p-8 border border-border hover:border-accent/40 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
+                <div className="w-12 h-12 bg-abyss flex items-center justify-center mb-6">
                   <svg
-                    className="w-6 h-6 text-accent"
+                    className="w-6 h-6 text-accent-light"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -88,20 +88,20 @@ export default function ProjectsPage() {
                     <path d={project.icon} />
                   </svg>
                 </div>
-                <p className="text-xs uppercase tracking-widest text-accent font-medium mb-2">
+                <p className="text-xs uppercase tracking-[0.2em] text-accent-light font-medium mb-2">
                   {project.category}
                 </p>
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted leading-relaxed mb-5">
+                <p className="text-sm text-body leading-relaxed mb-6">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-section-alt text-muted text-xs font-medium rounded-full"
+                      className="px-3 py-1 bg-abyss text-muted text-xs font-medium border border-accent/20"
                     >
                       {tag}
                     </span>
@@ -115,11 +115,15 @@ export default function ProjectsPage() {
 
       {/* CTA */}
       <section>
-        <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-4">
+        <div className="max-w-6xl mx-auto px-6 py-20 text-center">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
+            Collaboration
+          </p>
+          <div className="w-12 h-px bg-accent mx-auto mb-8" />
+          <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
             Want to Work Together?
           </h2>
-          <p className="text-muted mb-8 max-w-lg mx-auto">
+          <p className="text-muted mb-10 max-w-lg mx-auto leading-relaxed">
             I&apos;m always open to exploring new opportunities and collaborations.
             Reach out and let&apos;s create something meaningful.
           </p>
@@ -127,7 +131,7 @@ export default function ProjectsPage() {
             href="https://www.linkedin.com/in/codywales"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent-light transition-colors"
+            className="inline-flex items-center px-7 py-3 border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
           >
             Get in Touch
           </a>
