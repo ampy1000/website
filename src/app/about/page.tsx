@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,17 +12,33 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
-          About Me
-        </p>
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
-          Hey, I&apos;m Cody.
-        </h1>
-        <p className="text-lg text-body leading-relaxed max-w-2xl">
-          I am an experience designer, business builder and creative. I help
-          organizations transform consumer insights into strategic innovation
-          that drives business growth.
-        </p>
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
+              About Me
+            </p>
+            <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
+              Hey, I&apos;m Cody.
+            </h1>
+            <p className="text-lg text-body leading-relaxed">
+              I am an experience designer, business builder and creative. I help
+              organizations transform consumer insights into strategic innovation
+              that drives business growth.
+            </p>
+          </div>
+          <div className="hidden md:block">
+            <div className="rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-lg)]">
+              <Image
+                src="/images/about-creative.jpg"
+                alt="Creative workspace with drumsticks and design sketches"
+                width={600}
+                height={500}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Bio Section */}

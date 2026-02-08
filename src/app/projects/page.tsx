@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ const projects = [
     description:
       "Migrated and completely redesigned the ACHE of Central Florida chapter website. This project led to an invitation to join the Board of Directors as Communications Chair, where the focus was on building the chapter brand to better deliver the mission of being the 'premier professional membership society for leaders of healthcare.'",
     tags: ["Web Design", "Brand Strategy", "Healthcare"],
+    image: "/images/project-ache.jpg",
     icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
   },
   {
@@ -21,6 +23,7 @@ const projects = [
     description:
       "A platform that leverages coffee — a favorite beverage — to establish connections with interesting people in business, arts, and life. The initiative explores what has brought people to where they are today through meaningful conversations.",
     tags: ["Community Building", "Networking", "Storytelling"],
+    image: "/images/project-coffee.jpg",
     icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z",
   },
   {
@@ -29,6 +32,7 @@ const projects = [
     description:
       "Born from the venture with Joshua Martin Studios, this podcast was created to share learnings from building a creative enterprise. The show features dialogue between hosts as well as conversations with other creatives, exploring the intersection of business and art.",
     tags: ["Podcasting", "Creative Business", "Media"],
+    image: "/images/project-podcast.jpg",
     icon: "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z",
   },
   {
@@ -37,6 +41,7 @@ const projects = [
     description:
       "When a friend named Joshua had his gear stolen, stepped in to help by reaching out directly to gear manufacturers requesting free replacements. Multiple manufacturers responded positively, demonstrating the power of initiative and community.",
     tags: ["Community", "Initiative", "Problem Solving"],
+    image: "/images/project-gear.jpg",
     icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
   },
   {
@@ -45,6 +50,7 @@ const projects = [
     description:
       "Founded and operates an entertainment company, combining a passion for music and live performance with business acumen. As a national touring musician, sound bath facilitator, and drummer, this venture brings creative experiences to audiences.",
     tags: ["Entertainment", "Music", "Business"],
+    image: "/images/project-flying-w.jpg",
     icon: "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3",
   },
 ];
@@ -73,39 +79,36 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="bg-surface-alt rounded-2xl p-8 border border-border hover:border-accent/40 transition-colors"
+                className="bg-surface-alt rounded-2xl border border-border hover:border-accent/40 transition-colors overflow-hidden"
               >
-                <div className="w-12 h-12 rounded-xl bg-abyss flex items-center justify-center mb-6">
-                  <svg
-                    className="w-6 h-6 text-accent-light"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d={project.icon} />
-                  </svg>
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <p className="text-xs uppercase tracking-[0.2em] text-accent-light font-medium mb-2">
-                  {project.category}
-                </p>
-                <h3 className="text-xl font-bold text-foreground mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-body leading-relaxed mb-6">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 rounded-full bg-abyss text-muted text-xs font-medium border border-accent/20"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                <div className="p-8">
+                  <p className="text-xs uppercase tracking-[0.2em] text-accent-light font-medium mb-2">
+                    {project.category}
+                  </p>
+                  <h3 className="text-xl font-bold text-foreground mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-body leading-relaxed mb-6">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 rounded-full bg-abyss text-muted text-xs font-medium border border-accent/20"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

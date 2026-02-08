@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const values = [
@@ -37,15 +38,10 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        {/* Decorative circles inspired by gallery aesthetic */}
-        <div className="absolute top-16 right-[10%] w-72 h-72 md:w-96 md:h-96 rounded-full bg-accent/5 animate-float pointer-events-none" />
-        <div className="absolute top-32 right-[20%] w-48 h-48 md:w-64 md:h-64 rounded-full bg-accent/10 animate-float-delayed pointer-events-none" />
-        <div className="absolute top-8 right-[8%] w-6 h-6 rounded-full bg-accent/30 animate-float-slow pointer-events-none" />
-        <div className="absolute top-64 right-[5%] w-4 h-4 rounded-full bg-accent-light/20 animate-float pointer-events-none" />
-
+      <section>
         <div className="max-w-6xl mx-auto px-6 py-28 md:py-40">
-          <div className="max-w-2xl">
+          <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div>
             <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
               Welcome
             </p>
@@ -75,6 +71,19 @@ export default function Home() {
                 My Experience
               </Link>
             </div>
+          </div>
+          <div className="hidden md:block relative">
+            <div className="rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-lg)]">
+              <Image
+                src="/images/hero-workspace.jpg"
+                alt="A modern creative workspace with design tools and technology"
+                width={600}
+                height={500}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          </div>
           </div>
         </div>
       </section>
