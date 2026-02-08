@@ -12,11 +12,11 @@ const experiences = [
     company: "Pfizer",
     type: "current",
     description: [
-      "Bring a customer-first mindset to the complex healthcare ecosystem, translating consumer needs into product strategy and innovation opportunities.",
-      "Use service design tools such as journey mapping and service blueprinting to provide strategic insights that shape product development and go-to-market approaches.",
-      "Work with diverse stakeholders across the organization to enable breakthrough, best-in-class products and experiences for patients, health care providers, and colleagues.",
-      "Champion consumer-driven innovation methodologies, helping teams identify unmet needs and develop solutions that resonate in the market.",
-      "Contributed to critical COVID-19 efforts, such as providing virtual visit options for families and supporting the distribution of vaccines.",
+      "Bring a customer-first lens to one of the most complex ecosystems out there -- translating what real people need into product strategy that actually moves.",
+      "Journey maps and service blueprints aren't just workshop deliverables here. They're how we catch the gaps between what we think we're delivering and what patients actually experience.",
+      "Work across clinical, product, marketing, and executive teams. The breakthroughs don't happen in silos -- they happen at the intersections.",
+      "Champion the methodologies that surface unmet needs. The kind of needs people can't always articulate but you can feel when you're paying attention.",
+      "Contributed to critical COVID-19 response efforts, including virtual visit options for families and vaccine distribution support. Some work matters more than a roadmap.",
     ],
   },
   {
@@ -24,8 +24,8 @@ const experiences = [
     company: "ACHE of Central Florida",
     type: "leadership",
     description: [
-      "Joined the Board of Directors after migrating and completely redesigning the chapter website.",
-      "Focused on building the brand of the chapter to better deliver the mission statement to be the 'premier professional membership society for leaders of healthcare.'",
+      "Redesigned the chapter website from scratch. That project opened the door to a Board seat -- which tells you something about showing up with initiative.",
+      "Focused on sharpening the brand so it actually reflected the mission: being the premier society for healthcare leaders, not just saying it on a banner.",
     ],
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     company: "University Enrollment Management",
     type: "past",
     description: [
-      "During final year of school, joined the Integrated Marketing & Communications team part-time to support the development of strategy and content related to enrollment management.",
+      "Joined the Integrated Marketing & Communications team during my final year. Part-time role, full immersion -- developing strategy and content for enrollment management while finishing the degree.",
     ],
   },
   {
@@ -41,8 +41,8 @@ const experiences = [
     company: "Advertising Agency",
     type: "past",
     description: [
-      "During the summer before the final undergraduate year, sought opportunities in marketing and advertising, reaching out cold to a desired employer.",
-      "Had the opportunity to work with notable accounts including KitchenAid and Newell-Rubbermaid.",
+      "Cold-emailed the agency I wanted to work at the summer before senior year. They said yes. Sometimes the simplest move is just asking.",
+      "Got to work on real accounts -- KitchenAid, Newell-Rubbermaid -- which taught me more about the craft in three months than a semester of theory.",
     ],
   },
 ];
@@ -81,9 +81,10 @@ export default function ExperiencePage() {
           </div>
           <div className="md:col-span-5 pb-4">
             <p className="text-lg text-body leading-relaxed">
-              From marketing internships to global innovation strategy at one of the world{"'"}s
-              leading pharmaceutical companies, my career has been driven by a passion for
-              understanding people.
+              Cold emails to agencies, a website redesign that turned into a board
+              seat, and eventually global innovation strategy at one of the world{"'"}s
+              largest pharmaceutical companies. The through-line is simple: I{"'"}m
+              drawn to work where understanding people is the whole job.
             </p>
           </div>
         </div>

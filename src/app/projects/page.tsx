@@ -12,7 +12,7 @@ const projects = [
     title: "ACHE Chapter Website Redesign",
     category: "Healthcare Leadership",
     description:
-      "Migrated and completely redesigned the ACHE of Central Florida chapter website. This project led to an invitation to join the Board of Directors as Communications Chair, where the focus was on building the chapter brand to better deliver the mission of being the 'premier professional membership society for leaders of healthcare.'",
+      "The chapter's website wasn't doing the mission justice. I migrated and redesigned the whole thing -- and it worked well enough that they invited me onto the Board of Directors as Communications Chair. The goal from there: make the brand match the ambition of being the premier society for healthcare leaders.",
     tags: ["Web Design", "Brand Strategy", "Healthcare"],
     image: "/images/project-ache.jpg",
   },
@@ -20,7 +20,7 @@ const projects = [
     title: "Coffee with Cody",
     category: "Community & Networking",
     description:
-      "A platform that leverages coffee — a favorite beverage — to establish connections with interesting people in business, arts, and life. The initiative explores what has brought people to where they are today through meaningful conversations.",
+      "Simple premise: buy someone interesting a cup of coffee, ask them how they got to where they are, and actually listen. It started as a networking experiment and turned into one of the most valuable things I do -- real conversations with people across business, arts, and life.",
     tags: ["Community Building", "Networking", "Storytelling"],
     image: "/images/project-coffee.jpg",
   },
@@ -28,7 +28,7 @@ const projects = [
     title: "The Produced Podcast",
     category: "Creative Media",
     description:
-      "Born from the venture with Joshua Martin Studios, this podcast was created to share learnings from building a creative enterprise. The show features dialogue between hosts as well as conversations with other creatives, exploring the intersection of business and art.",
+      "This one came out of building a creative business with Joshua Martin Studios. We figured if we were learning this much, other people might want to hear it too. The show is part behind-the-scenes, part conversation with other creatives navigating the space where business meets art.",
     tags: ["Podcasting", "Creative Business", "Media"],
     image: "/images/project-podcast.jpg",
   },
@@ -36,7 +36,7 @@ const projects = [
     title: "Gear Replacement Initiative",
     category: "Community Support",
     description:
-      "When a friend named Joshua had his gear stolen, stepped in to help by reaching out directly to gear manufacturers requesting free replacements. Multiple manufacturers responded positively, demonstrating the power of initiative and community.",
+      "When my friend Joshua had his gear stolen, I didn't wait around. I reached out directly to manufacturers and asked for help. Multiple companies stepped up with free replacements. Sometimes the simplest move -- just asking -- is the most powerful one.",
     tags: ["Community", "Initiative", "Problem Solving"],
     image: "/images/project-gear.jpg",
   },
@@ -44,7 +44,7 @@ const projects = [
     title: "Flying W Entertainment",
     category: "Entrepreneurship",
     description:
-      "Founded and operates an entertainment company, combining a passion for music and live performance with business acumen. As a national touring musician, sound bath facilitator, and drummer, this venture brings creative experiences to audiences.",
+      "This is where the business side and the creative side stop pretending they're separate. I founded Flying W to bring live music, sound baths, and performance experiences to audiences. Drummer, facilitator, entrepreneur -- turns out you don't have to pick just one.",
     tags: ["Entertainment", "Music", "Business"],
     image: "/images/project-flying-w.jpg",
   },
@@ -63,8 +63,9 @@ export default function ProjectsPage() {
           <span className="text-warm">Built.</span>
         </h1>
         <p className="text-lg md:text-xl text-body leading-relaxed max-w-xl">
-          From redesigning healthcare websites to launching podcasts and entertainment
-          ventures, here are some of the projects I{"'"}m most proud of.
+          Some of these started with a strategy deck. Others started with a cold email
+          or a cup of coffee. All of them taught me something I couldn{"'"}t have learned
+          any other way.
         </p>
       </section>
 
@@ -160,8 +161,8 @@ export default function ProjectsPage() {
                 Collaboration
               </p>
               <h2 className="text-3xl md:text-4xl font-extrabold text-background leading-tight">
-                Want to work together?<br />
-                <span className="text-warm">Let{"'"}s make it happen.</span>
+                Got a project that needs<br />
+                <span className="text-warm">a different perspective?</span>
               </h2>
             </div>
             <div className="md:col-span-4 flex md:justify-end">

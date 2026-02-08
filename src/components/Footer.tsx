@@ -10,8 +10,8 @@ export default function Footer() {
               Cody<span className="text-warm">.</span>
             </h3>
             <p className="text-muted leading-relaxed max-w-xs mb-6">
-              Experience designer, business builder & creative. Turning
-              insights into innovation and ideas into impact.
+              Designing how things feel. Building what matters.
+              Making the case for both.
             </p>
             <div className="flex gap-4">
               <a
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
         <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted">&copy; {new Date().getFullYear()} Cody Wales. All rights reserved.</p>
-          <p className="text-xs text-muted">Designed with intention.</p>
+          <p className="text-xs text-muted">Built with intention. And a lot of coffee.</p>
         </div>
       </div>
     </footer>

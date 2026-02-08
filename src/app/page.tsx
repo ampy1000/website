@@ -5,31 +5,31 @@ const values = [
   {
     title: "Exploration",
     description:
-      "Constantly seeking the unknown and discovering innovative paths to create exceptional experiences.",
+      "The best ideas don't come from the same four walls. I'm constantly pulling from unfamiliar places -- new industries, new people, new problems -- because that's where the interesting stuff lives.",
     number: "01",
   },
   {
     title: "Growth",
     description:
-      "Persistently driven to find better ways of doing things and evolving both personally and professionally.",
+      "Comfortable and growing are rarely the same thing. I'd rather be the person who tried a better way and learned something than the one who stuck with 'how we've always done it.'",
     number: "02",
   },
   {
     title: "Intention",
     description:
-      "Ensuring every task is meaningful and executed to the highest standard with purpose and mindfulness.",
+      "Busy isn't the same as productive. Every project, every conversation, every commitment should earn its place -- if it doesn't serve a purpose, it's just noise.",
     number: "03",
   },
   {
     title: "Service",
     description:
-      "Striving to develop myself to better support and uplift others through meaningful work.",
+      "The work matters most when it makes someone else's work (or life) a little better. That's the whole point -- build yourself up so you can lift others.",
     number: "04",
   },
   {
     title: "Boldness",
     description:
-      "A willingness to challenge conventional wisdom and push boundaries to drive innovation.",
+      "Conventional wisdom is comfortable, not correct. The willingness to challenge what everyone accepts as true -- that's where real innovation starts.",
     number: "05",
   },
 ];
@@ -59,13 +59,14 @@ export default function Home() {
                 Experience Designer / Business Builder / Creative
               </p>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
-                We give a<br />
-                voice to<br />
-                <span className="text-warm">experience.</span>
+                I design<br />
+                how things<br />
+                <span className="text-warm">feel.</span>
               </h1>
               <p className="text-body leading-relaxed max-w-md text-lg mb-10">
-                I help organizations transform consumer insights into strategic
-                innovation that drives business growth through human-centered design.
+                Most companies know what they build. Fewer understand how people
+                actually experience it. That{"'"}s where I come in -- turning
+                real consumer insights into strategy that moves the needle.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -129,8 +130,9 @@ export default function Home() {
             </div>
             <div className="md:col-span-7 flex items-end">
               <p className="text-body leading-relaxed text-lg max-w-lg">
-                These principles shape every decision I make -- from designing patient
-                experiences at Pfizer to performing on stage with my band.
+                The same values that shape how I design patient experiences
+                at Pfizer also show up when I{"'"}m behind a drum kit or
+                leading a sound bath. The context changes. The principles don{"'"}t.
               </p>
             </div>
           </div>
@@ -157,7 +159,7 @@ export default function Home() {
                 Let{"'"}s Connect
               </p>
               <p className="text-white font-bold text-2xl mb-4">
-                Ready to collaborate?
+                Got something interesting?
               </p>
               <a
                 href="https://www.linkedin.com/in/codywales"
@@ -181,17 +183,19 @@ export default function Home() {
                 About
               </p>
               <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8 leading-tight text-balance">
-                Designing Experiences That Matter
+                The Short Version
               </h2>
               <div className="space-y-4 text-body leading-relaxed text-lg">
                 <p>
-                  As a seasoned customer experience (CX) and service design strategist,
-                  I help organizations transform consumer insights into strategic innovation
-                  that drives business growth.
+                  I{"'"}m a CX and service design strategist who{"'"}s spent years
+                  figuring out the gap between what organizations build and what
+                  people actually need. The work is part research, part design,
+                  part making a compelling case for why any of it matters.
                 </p>
                 <p className="text-muted">
-                  My expertise lies in designing and delivering human-centered experiences
-                  that create measurable value for customers and employees.
+                  When it clicks -- when the insight leads to a strategy that leads
+                  to something a patient or provider can feel -- that{"'"}s the
+                  part I live for.
                 </p>
               </div>
               <Link
@@ -231,8 +235,8 @@ export default function Home() {
           <div className="grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
               <h2 className="text-3xl md:text-5xl font-extrabold text-background leading-tight">
-                Let{"'"}s create something<br />
-                <span className="text-warm">meaningful together.</span>
+                Good work starts with<br />
+                <span className="text-warm">a good conversation.</span>
               </h2>
             </div>
             <div className="md:col-span-4 flex md:justify-end gap-4 flex-wrap">

@@ -4,33 +4,33 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Me | Cody Wales",
   description:
-    "Learn about Cody Wales — experience designer, business builder, and creative with a passion for human-centered innovation.",
+    "The backstory on Cody Wales -- experience designer, drummer, sound bath facilitator, and the kind of person who cold-emails gear manufacturers for a friend.",
 };
 
 const approaches = [
   {
-    title: "Customer-First Mindset",
-    text: "Bringing a deep understanding of user needs to the complex healthcare ecosystem, translating consumer insights into product strategy.",
+    title: "Start With the Person",
+    text: "Not the product, not the roadmap, not the quarterly target. The person. Everything else follows from actually understanding what someone needs -- and what's getting in the way.",
   },
   {
-    title: "Service Design",
-    text: "Using tools such as journey mapping and service blueprinting to provide strategic insights that shape product development.",
+    title: "Map It Before You Build It",
+    text: "Journey maps and service blueprints aren't just workshop artifacts. They're how you catch the gaps between what you think the experience is and what it actually is.",
   },
   {
-    title: "Cross-Functional Collaboration",
-    text: "Working with diverse stakeholders to enable breakthrough, best-in-class products and experiences.",
+    title: "Work Across the Lines",
+    text: "The best ideas die in silos. I work with clinical teams, product teams, marketers, and executives -- not because it's efficient, but because the real breakthroughs live at the intersections.",
   },
   {
-    title: "Consumer-Driven Innovation",
-    text: "Championing methodologies that help teams identify unmet needs and develop solutions that resonate.",
+    title: "Find the Unmet Need",
+    text: "People will tell you what they want. The job is figuring out what they need but can't articulate yet. That's where the most meaningful innovation happens.",
   },
   {
-    title: "Human-Centered Design",
-    text: "Creating meaningful solutions through empathy and research that help patients and professionals.",
+    title: "Design With Empathy, Decide With Evidence",
+    text: "Empathy gets you close to the truth. Research gets you the rest of the way. Good design does both -- it feels right and holds up under scrutiny.",
   },
   {
-    title: "Strategic Innovation",
-    text: "Orchestrating the collaboration between design and product teams to directly improve the healthcare experience.",
+    title: "Close the Gap Between Strategy and Experience",
+    text: "A great strategy that patients never feel is just a PowerPoint. I focus on the connective tissue between what we plan and what people actually encounter.",
   },
 ];
 
@@ -49,9 +49,9 @@ export default function AboutPage() {
               <span className="text-warm">Cody.</span>
             </h1>
             <p className="text-lg md:text-xl text-body leading-relaxed max-w-lg">
-              I am an experience designer, business builder and creative. I help
-              organizations transform consumer insights into strategic innovation
-              that drives business growth.
+              Experience designer, business builder, national touring drummer,
+              sound bath facilitator -- and yes, all of those things connect
+              more than you{"'"}d think.
             </p>
           </div>
           <div className="md:col-span-5">
@@ -74,26 +74,30 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
           <div className="grid md:grid-cols-12 gap-14">
             <div className="md:col-span-7">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-8">My Story</h2>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-8">How I Got Here</h2>
               <div className="space-y-5 text-body leading-relaxed text-lg">
                 <p>
-                  My journey into healthcare began when a close friend{"'"}s snowmobile accident
-                  showed me the profound impact of whole person care. While my pre-med aspirations
-                  eventually led me to marketing, I discovered my true calling in{" "}
-                  <span className="text-foreground font-semibold">understanding and connecting with people.</span>
+                  It started with a snowmobile accident -- not mine, a close friend{"'"}s.
+                  Watching the difference that whole-person care made in his recovery
+                  rewired how I thought about healthcare. I went in planning to be pre-med.
+                  I came out understanding that{" "}
+                  <span className="text-foreground font-semibold">connecting with people is the point, not just treating them.</span>
                 </p>
                 <p>
-                  As a seasoned customer experience (CX) and service design strategist, I help
-                  organizations transform consumer insights into strategic innovation that drives
-                  business growth. My expertise lies in designing and delivering human-centered
-                  experiences that create measurable value.
+                  That realization eventually pulled me toward CX and service design,
+                  where the work is figuring out the gap between what an organization
+                  thinks it delivers and what a person actually experiences. I{"'"}ve
+                  spent years doing that work in healthcare -- mapping journeys,
+                  blueprinting services, and making the case for why all of it matters
+                  to people who hold the budget.
                 </p>
                 <p className="text-muted">
-                  Beyond my professional work, I{"'"}m a{" "}
+                  Outside of that, I{"'"}m a{" "}
                   <span className="text-warm font-semibold">national touring musician</span>,{" "}
                   <span className="text-warm font-semibold">sound bath facilitator</span>, and{" "}
                   <span className="text-warm font-semibold">founder of Flying W Entertainment</span>.
-                  I love to laugh, be goofy, and believe deeply in the power of creative expression.
+                  I love to laugh, be goofy, and I believe the best version of myself
+                  shows up when creative expression is part of the equation.
                 </p>
               </div>
             </div>
@@ -158,14 +162,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <blockquote className="border-l-4 border-warm rounded-r-2xl bg-warm-light px-8 py-8">
               <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
-                &ldquo;Realize the value of a strong network &mdash; you can accomplish so much
-                more with a diverse group than you can alone.&rdquo;
+                &ldquo;You can accomplish so much more with a diverse group than you
+                can alone. Build the network before you need it.&rdquo;
               </p>
             </blockquote>
             <blockquote className="border-l-4 border-warm rounded-r-2xl bg-warm-light px-8 py-8">
               <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
-                &ldquo;Feedback is a gift &mdash; the sooner and more often you{"'"}re willing
-                to get it, the better the outcome of the product.&rdquo;
+                &ldquo;Feedback is a gift. The sooner you{"'"}re willing to hear it,
+                the better the work gets. Every single time.&rdquo;
               </p>
             </blockquote>
           </div>
