@@ -11,9 +11,9 @@
   --cerulean: #3B82F6;
   --ice: #2563EB;
   --abyss: #EFF6FF;
-  --warm: #E97316;
-  --warm-light: #FFF7ED;
-  --warm-deep: #C2410C;
+  --warm: #3B82F6;
+  --warm-light: #EFF6FF;
+  --warm-deep: #1D4ED8;
 }
 
 @theme inline {
@@ -52,8 +52,8 @@ html {
 }
 
 ::selection {
-  background: var(--warm-light);
-  color: var(--warm-deep);
+  background: var(--abyss);
+  color: var(--ice);
 }
 
 /* Marquee */
@@ -96,7 +96,7 @@ html {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background: var(--warm);
+  background: var(--cerulean);
   transition: width 0.3s ease;
 }
 .link-draw:hover::after {
