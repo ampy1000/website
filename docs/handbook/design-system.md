@@ -1,35 +1,38 @@
-# Design System — Dark Interface
-> Design System v2.0 — Dark Interface
-## 10 tokens extracted from a dark interface
-A comprehensive design system built on a refined dark palette — 7 neutrals and 3 blues. Designed for clarity, depth, and focus using Open Sans across all typographic roles.
+# Design System -- Dynamic Creative
+> Design System v3.1 -- Unified Blue Accent
+## 13 tokens extracted from a dynamic, expressive light interface
+A comprehensive design system built on a white foundation with a unified blue accent family for both action and personality. Designed for energy, confidence, and creative expression using Open Sans across all typographic roles.
 ### Meta
 | Key | Value |
 |---|---|
-| Aesthetic | Dark Precision |
-| Palette | 7 Neutrals · 3 Blues |
+| Aesthetic | Dynamic Creative |
+| Palette | 7 Neutrals · 6 Blues |
 | Typeface | Open Sans |
-| Surfaces | Layered Depth |
+| Surfaces | White with blue accents & motion |
 
 ## Tokens
-This document contains the exported design tokens (colors, typography, spacing, radius, shadows, and motion) plus usage guidance.
+This document contains the exported design tokens (colors, typography, spacing, radius, shadows, motion, and animations) plus usage guidance.
 
 ### Colors
 | Token | Value |
 |---|---|
-| `--abyss` | `#1A3352` |
+| `--void` | `#FFFFFF` |
+| `--obsidian` | `#FAFAFA` |
+| `--gunmetal` | `#F5F5F5` |
+| `--slate` | `#E5E5E5` |
+| `--pewter` | `#737373` |
+| `--silver` | `#525252` |
+| `--cloud` | `#171717` |
 | `--cerulean` | `#3B82F6` |
-| `--cloud` | `#D6DEE6` |
+| `--ice` | `#2563EB` |
+| `--abyss` | `#EFF6FF` |
+| `--warm` | `#3B82F6` |
+| `--warm-light` | `#EFF6FF` |
+| `--warm-deep` | `#1D4ED8` |
 | `--error` | `#F87171` |
-| `--gunmetal` | `#1E2A36` |
-| `--ice` | `#60A5FA` |
-| `--info` | `#60A5FA` |
-| `--obsidian` | `#151C25` |
-| `--pewter` | `#6B7D8E` |
-| `--silver` | `#9BAAB8` |
-| `--slate` | `#2E3C4A` |
 | `--success` | `#34D399` |
-| `--void` | `#0B0F14` |
 | `--warning` | `#FBBF24` |
+| `--info` | `#2563EB` |
 
 ### Typography
 | Token | Value |
@@ -57,42 +60,42 @@ This document contains the exported design tokens (colors, typography, spacing, 
 | Token | Value |
 |---|---|
 | `--space-1` | `0.25rem` |
-| `--space-10` | `2.5rem` |
-| `--space-12` | `3rem` |
-| `--space-16` | `4rem` |
 | `--space-2` | `0.5rem` |
-| `--space-20` | `5rem` |
-| `--space-24` | `6rem` |
 | `--space-3` | `0.75rem` |
-| `--space-32` | `8rem` |
 | `--space-4` | `1rem` |
 | `--space-5` | `1.25rem` |
 | `--space-6` | `1.5rem` |
 | `--space-8` | `2rem` |
+| `--space-10` | `2.5rem` |
+| `--space-12` | `3rem` |
+| `--space-16` | `4rem` |
+| `--space-20` | `5rem` |
+| `--space-24` | `6rem` |
+| `--space-32` | `8rem` |
 
 ### Radius
 | Token | Value |
 |---|---|
-| `--radius-full` | `9999px` |
-| `--radius-lg` | `10px` |
-| `--radius-md` | `6px` |
 | `--radius-sm` | `2px` |
+| `--radius-md` | `6px` |
+| `--radius-lg` | `10px` |
 | `--radius-xl` | `16px` |
+| `--radius-full` | `9999px` |
 
 ### Borders
 | Token | Value |
 |---|---|
-| `--border-medium` | `2px` |
 | `--border-thin` | `1px` |
+| `--border-medium` | `2px` |
 
 ### Shadows
 | Token | Value |
 |---|---|
-| `--shadow-glow` | `0 0 20px rgba(59, 130, 246, 0.15)` |
-| `--shadow-lg` | `0 8px 30px rgba(0,0,0,0.45)` |
-| `--shadow-md` | `0 4px 12px rgba(0,0,0,0.4)` |
-| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.3)` |
-| `--shadow-xl` | `0 20px 60px rgba(0,0,0,0.5)` |
+| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.04)` |
+| `--shadow-md` | `0 4px 12px rgba(0,0,0,0.06)` |
+| `--shadow-lg` | `0 8px 30px rgba(0,0,0,0.08)` |
+| `--shadow-xl` | `0 20px 60px rgba(0,0,0,0.1)` |
+| `--shadow-glow` | `0 0 30px rgba(59,130,246,0.08)` |
 
 ### Motion
 | Token | Value |
@@ -102,41 +105,55 @@ This document contains the exported design tokens (colors, typography, spacing, 
 | `--duration-slow` | `500ms` |
 | `--ease-in-out` | `cubic-bezier(0.42, 0, 0.58, 1)` |
 | `--ease-out` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
+| `--ease-smooth` | `cubic-bezier(0.33, 1, 0.68, 1)` |
 
-## 01 · Design Principles
-These principles guide every design decision, ensuring consistency and clarity across the dark interface.
+## 01 -- Design Principles
+These principles guide every design decision, ensuring consistency and creative energy across the interface.
 
-### I. Layered Depth
-Use surface elevation through color — Void, Obsidian, Gunmetal — to create visual hierarchy. Each layer communicates importance through subtle tonal shifts, not heavy shadows.
+### I. White Canvas, Blue Soul
+White backgrounds provide a clean stage. Personality comes from blue accents, bold typography, asymmetric layouts, and motion -- not from surface color variation. The design should feel alive and confident, never sterile.
 
-### II. Blue as Signal
-Cerulean is reserved for interactive elements: buttons, links, focus rings, and active states. It should draw the eye precisely where action is needed, never used decoratively.
+### II. Unified Blue Accent
+The entire accent system is built on a single blue family. Cerulean (#3B82F6) serves as the primary accent for both interactive elements and personality highlights -- hero text accents, hover states, link underlines, timeline markers, and decorative touches. Ice (#2563EB) provides a deeper variant for emphasis, and Abyss (#EFF6FF) provides a soft tint for backgrounds. This creates a cohesive, focused visual identity.
 
-### III. Readable Contrast
-Cloud for headings, Silver for body, Pewter for secondary. Each text color is tuned for legibility against dark surfaces while maintaining a calm, low-fatigue reading experience.
+### III. Motion as Character
+Animations are not decorative afterthoughts -- they are part of the brand. The scrolling marquee, hover-zoom on images, fade-up reveals, and the link-draw underline animation all reinforce a sense of creative energy and craftsmanship.
 
-## 02 · Color Palette
-10 tokens extracted from a dark interface — 7 neutrals, 3 blues. Each token has a named role and clear usage context.
+### IV. Readable Contrast
+Cloud (#171717) for headings, Silver (#525252) for body, Pewter (#737373) for secondary. Dark text on white surfaces ensures legibility while the near-black Cloud keeps headings bold and confident.
+
+## 02 -- Color Palette
+13 tokens -- 7 neutrals and 6 blues (3 primary + 3 mapped via warm aliases). Each token has a named role and clear usage context.
 
 ### Neutrals
 
 | Token | Role | Hex | Usage |
 |---|---|---|---|
-| **Void** | Background | `#0B0F14` | Primary surface — deepest layer of the interface |
-| **Obsidian** | Surface | `#151C25` | Cards, modals, and elevated containers |
-| **Gunmetal** | Surface Alt | `#1E2A36` | Secondary surfaces, sidebar backgrounds |
-| **Slate** | Border / Divider | `#2E3C4A` | Subtle separations between content areas |
-| **Pewter** | Muted Text | `#6B7D8E` | Secondary labels, placeholders, captions |
-| **Silver** | Body Text | `#9BAAB8` | Primary readable content on dark surfaces |
-| **Cloud** | Heading Text | `#D6DEE6` | Titles, headings, high-emphasis text |
+| **Void** | Background | `#FFFFFF` | Primary surface -- clean white base |
+| **Obsidian** | Surface | `#FAFAFA` | Cards, modals, and subtle elevated containers |
+| **Gunmetal** | Surface Alt | `#F5F5F5` | Section alternates, sidebar backgrounds |
+| **Slate** | Border / Divider | `#E5E5E5` | Light gray separations between content areas |
+| **Pewter** | Muted Text | `#737373` | Secondary labels, placeholders, captions |
+| **Silver** | Body Text | `#525252` | Primary readable content |
+| **Cloud** | Heading Text | `#171717` | Titles, headings, high-emphasis text |
 
-### Blues — Accent & Action
+### Blues -- Action, Interface & Expression
 
 | Token | Role | Hex | Usage |
 |---|---|---|---|
-| **Cerulean** | Primary Action | `#3B82F6` | Buttons, links, active states, focus rings |
-| **Ice** | Accent Light | `#60A5FA` | Hover states, badges, subtle highlights |
-| **Abyss** | Accent Muted | `#1A3352` | Selected rows, active nav items, tinted cards |
+| **Cerulean** | Primary Accent | `#3B82F6` | Buttons, links, hero highlights, hover accents, timeline dots |
+| **Ice** | Accent Dark | `#2563EB` | Hover states on blue elements, selection text, emphasis |
+| **Abyss** | Accent Tint | `#EFF6FF` | Selected rows, active nav items, tinted backgrounds, selection highlight |
+
+### Blue Aliases (mapped from warm tokens)
+
+The `--warm` token family is mapped to the blue family for a unified accent. These aliases exist in code for component compatibility.
+
+| Token | Alias For | Hex | Usage |
+|---|---|---|---|
+| **Warm** | Cerulean | `#3B82F6` | Hero text highlights, link underlines, hover accents |
+| **Warm Light** | Abyss | `#EFF6FF` | Tinted card hovers, tag backgrounds |
+| **Warm Deep** | Ice variant | `#1D4ED8` | Deeper blue for emphasis in hover states |
 
 ### Semantic
 
@@ -145,35 +162,35 @@ Cloud for headings, Silver for body, Pewter for secondary. Each text color is tu
 | **Success** | `#34D399` |
 | **Warning** | `#FBBF24` |
 | **Error** | `#F87171` |
-| **Info** | `#60A5FA` |
+| **Info** | `#2563EB` |
 
-## 03 · Typography
-Open Sans serves all typographic roles — a versatile humanist sans-serif with excellent legibility on dark backgrounds.
+## 03 -- Typography
+Open Sans serves all typographic roles -- a versatile humanist sans-serif with excellent legibility on white backgrounds. The key to avoiding a corporate feel is using bold weight contrasts and oversized hero text.
 
 ### Font usage
 
 | Role | Face | Notes | Sample |
 |---|---|---|---|
-| Display · Light 300 | **Open Sans Light** | Used for hero headlines and large display text. The thin weight creates elegant contrast against bold dark surfaces. | We give a voice to art in all its manifestations |
-| Headings · Bold 700 | **Open Sans Bold** | Section headers and emphasis. Cloud color (#D6DEE6) ensures clear visual hierarchy on dark backgrounds. | Capital Letters Exhibition |
-| Body · Regular 400 | **Open Sans Regular** | Body copy and general content. Silver color (#9BAAB8) is tuned for comfortable reading at length on dark surfaces. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Designed for sustained readability. |
-| UI · SemiBold 600 | **Open Sans SemiBold** | Navigation, buttons, labels, overlines. Used with wide letter-spacing and uppercase transforms for structural clarity. | Activities · Projects · News · Exhibitions |
+| Display / Light 300 | **Open Sans Light** | Hero headlines and large display text. Thin weight at oversized scale (5xl-7xl) creates editorial impact. Pair with blue-colored accent words. | I design **experience.** |
+| Headings / Bold 700 | **Open Sans Bold** | Section headers and emphasis. Cloud color (#171717) for bold visual hierarchy. | Capital Letters Exhibition |
+| Body / Regular 400 | **Open Sans Regular** | Body copy and general content. Silver (#525252) for sustained readability. Max width constrained for comfortable line lengths. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. |
+| UI / SemiBold 600 | **Open Sans SemiBold** | Navigation, buttons, labels, overlines. Wide letter-spacing and uppercase transforms for structural clarity. | Activities / Projects / News |
 
 ### Type scale specimens
 
-| Specimen | Token | Meta | Sample |
-|---|---|---|---|
-| **Hero / Display** | `--fs-hero` | Open Sans Light 300 clamp(3rem–4.5rem) / 1.1 --fs-hero | We give a voice to art |
-| **Heading 1** | `--fs-h1` | Open Sans Bold 700 clamp(2.25rem–3.5rem) / 1.1 --fs-h1 | Capital Letters |
-| **Heading 2** | `--fs-h2` | Open Sans SemiBold 600 clamp(1.75rem–2.5rem) / 1.25 --fs-h2 | Urban Art Exhibition |
-| **Heading 3** | `--fs-h3` | Open Sans SemiBold 600 clamp(1.25rem–1.75rem) / 1.25 --fs-h3 | Collaborators & Partners |
-| **Overline / Label** | `--fs-overline` | Open Sans Bold 700 0.6875rem / 0.15em tracking --fs-overline | Exhibitions · Activities · Projects |
-| **Navigation** | `--fs-body-sm` | Open Sans SemiBold 600 0.875rem / 0.06em tracking --fs-body-sm | Activities    Projects    News    Exhibitions    About |
-| **Body** | `--fs-body` | Open Sans Regular 400 1rem / 1.5 line-height --fs-body | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| **Caption / Muted** | `--fs-body-sm` | Open Sans Regular 400 0.875rem / 1.5 line-height --fs-body-sm | Supporting text for additional context, dates, metadata, and secondary information. |
+| Specimen | Token | Meta |
+|---|---|---|
+| **Hero / Display** | `--fs-hero` | Open Sans Light 300 clamp(3rem-4.5rem) / 1.1 |
+| **Heading 1** | `--fs-h1` | Open Sans Bold 700 clamp(2.25rem-3.5rem) / 1.1 |
+| **Heading 2** | `--fs-h2` | Open Sans SemiBold 600 clamp(1.75rem-2.5rem) / 1.25 |
+| **Heading 3** | `--fs-h3` | Open Sans SemiBold 600 clamp(1.25rem-1.75rem) / 1.25 |
+| **Overline / Label** | `--fs-overline` | Open Sans Bold 700 0.6875rem / 0.15em tracking |
+| **Navigation** | `--fs-body-sm` | Open Sans SemiBold 600 0.875rem / 0.06em tracking |
+| **Body** | `--fs-body` | Open Sans Regular 400 1rem / 1.5 line-height |
+| **Caption / Muted** | `--fs-body-sm` | Open Sans Regular 400 0.875rem / 1.5 line-height |
 
-## 04 · Spacing Scale
-A 4px base unit spacing scale. Generous padding around cards and sections reinforces the layered depth model.
+## 04 -- Spacing Scale
+A 4px base unit spacing scale. Generous padding around cards and sections reinforces breathing room and editorial feel.
 
 | Token | Example value |
 |---|---|
@@ -188,107 +205,132 @@ A 4px base unit spacing scale. Generous padding around cards and sections reinfo
 | `--space-24` | 96px |
 | `--space-32` | 128px |
 
-## 05 · Buttons
-Six button variants for different levels of emphasis. Primary uses Cerulean, with muted and surface variants for lower-priority actions.
+## 05 -- Buttons
+All button variants use the unified blue accent system. Primary actions are Cerulean, personality CTAs use the same blue at different weights. Hover states on dark buttons transition to blue.
 
-### Primary — Cerulean Fill
+### Primary -- Cerulean Fill
 | Label | Size | Variant class |
 |---|---|---|
 | Get Started | LG | `primary` |
 | Get Started | MD | `primary` |
 | Get Started | SM | `primary` |
 
-### Outline — Blue Border
+### Accent -- Blue Fill (via warm alias)
+| Label | Size | Variant class |
+|---|---|---|
+| Let's Connect | LG | `accent` |
+| Let's Connect | MD | `accent` |
+
+### Outline -- Blue Border
 | Label | Size | Variant class |
 |---|---|---|
 | Explore | LG | `outline-blue` |
 | Explore | MD | `outline-blue` |
 | Explore | SM | `outline-blue` |
 
-### Outline — Neutral Border
+### Outline -- Neutral Border
 | Label | Size | Variant class |
 |---|---|---|
 | View More | LG | `outline` |
 | View More | MD | `outline` |
 | View More | SM | `outline` |
 
-### Muted — Abyss Tint
+### Dark -- Cloud Fill
 | Label | Size | Variant class |
 |---|---|---|
-| Secondary | LG | `muted` |
-| Secondary | MD | `muted` |
-| Secondary | SM | `muted` |
+| Connect | MD | `dark` |
 
-### Surface — Gunmetal Fill
-| Label | Size | Variant class |
-|---|---|---|
-| Tertiary | LG | `surface` |
-| Tertiary | MD | `surface` |
-
-### Ghost — Text Link
+### Ghost -- Text Link
 | Label | Size | Variant class |
 |---|---|---|
 | Learn More | LG | `ghost` |
 | Learn More | MD | `ghost` |
 
-## 06 · Shadows & Elevation
-Deep, dark shadows for true depth. The glow variant uses Cerulean for focus states and interactive emphasis.
+## 06 -- Shadows & Elevation
+Very soft shadows for gentle elevation. Opacity is kept low to maintain the airy, creative feel. The glow variant uses Cerulean for focus states.
 
-| Level | Token |
-|---|---|
-| Small | `--shadow-sm` |
-| Medium | `--shadow-md` |
-| Large | `--shadow-lg` |
-| XL | `--shadow-xl` |
-| Glow | `--shadow-glow` |
+| Level | Token | Value |
+|---|---|---|
+| Small | `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.04)` |
+| Medium | `--shadow-md` | `0 4px 12px rgba(0,0,0,0.06)` |
+| Large | `--shadow-lg` | `0 8px 30px rgba(0,0,0,0.08)` |
+| XL | `--shadow-xl` | `0 20px 60px rgba(0,0,0,0.1)` |
+| Glow | `--shadow-glow` | `0 0 30px rgba(59,130,246,0.08)` |
 
-## 07 · Motion & Interaction
-Subtle, professional interactions. The glow effect is unique to the dark theme — drawing attention through light emission.
+## 07 -- Motion & Interaction
+Motion is a core part of the brand identity. Animations add life and creative energy.
+
+### Custom animations
+
+| Animation | Class | Description |
+|---|---|---|
+| **Marquee** | `.animate-marquee` | Continuous horizontal scroll (30s loop). Used for skill/interest tickers. |
+| **Fade Up** | `.animate-fade-up` | Elements fade in while translating up 24px (0.6s ease-out). Used for scroll reveals. |
+| **Hover Zoom** | `.hover-zoom` | Images scale to 1.05x on hover with smooth cubic-bezier easing (0.5s). Applied to parent container. |
+| **Link Draw** | `.link-draw` | A blue underline expands from left to right on hover (0.3s). Used for text links in nav and footer. |
 
 ### Interaction patterns
-- Lift
-- Scale
-- Fade
-- Glow
+- **Lift** -- Cards translate up on hover with shadow increase
+- **Blue border** -- Cards shift border color to blue on hover
+- **Color shift** -- Text transitions to blue accent on hover
+- **Zoom** -- Images gently scale up within their overflow-hidden container
 
 ### Timing tokens
-- Fast · 150ms
-- Normal · 300ms
-- Slow · 500ms
+- Fast: 150ms -- micro-interactions, color changes
+- Normal: 300ms -- link underlines, border transitions
+- Slow: 500ms -- image zoom, layout transitions
 
-## 08 · Layout & Grid
-12-column grid with generous gutters. Surface layering (Void → Obsidian → Gunmetal) defines spatial hierarchy.
+### Easing
+- `--ease-out` for most UI transitions
+- `--ease-smooth` (`cubic-bezier(0.33, 1, 0.68, 1)`) for image zoom
 
-**Specs:** Container: max-width 1200px · Gutter: 24px · Side padding: 32px–80px · Border radius: 10–16px
+## 08 -- Layout & Grid
+12-column grid with generous gutters. Asymmetric layouts preferred over rigid uniformity to create visual interest.
 
-## 09 · Component Patterns
-Core UI patterns adapted for the dark interface. Each component uses the layered depth model for visual elevation.
+**Specs:** Container: max-width 1200px / Gutter: 24px / Side padding: 24px-80px / Border radius: 10-16px
+
+### Layout patterns
+- **Asymmetric hero** -- Text on left (60%), image on right (40%) with overlapping badge element
+- **Marquee strip** -- Full-bleed scrolling ticker between sections
+- **Featured + grid** -- One large featured card spanning full width, remaining items in 2-3 column grid
+- **Timeline** -- Vertical line with alternating dot colors (blue for current/leadership, gray for past)
+- **Dark inversion sections** -- Occasional dark (Cloud bg, white text) sections for dramatic contrast
+
+## 09 -- Component Patterns
+Core UI patterns reflecting the dynamic creative direction. Components use a mix of borders, shadows, blue accents, and motion.
 
 | Component | Notes |
 |---|---|
-| **Navigation Bar** | Open Sans SemiBold links. Active state uses Cerulean with bottom border accent. |
-| **Content Card** | Obsidian surface with Slate border. Badge uses Abyss background with Ice text. |
-| **Text Input** | Void background, Slate border. Focus state uses Cerulean border with subtle blue glow ring. |
-| **Toggle Switch** | Slate track when off, Cerulean when on. Cloud thumb for contrast on both states. |
+| **Navigation Bar** | "Cody." branding with blue dot. SemiBold links with `.link-draw` underline animation. Dark "Connect" button that shifts to blue on hover. |
+| **Content Card** | Obsidian surface with Slate border. Hover transitions border to blue. `.hover-zoom` on image containers. |
+| **Featured Card** | Full-width, dark background (Cloud). Side-by-side image and text. Blue-colored tags. |
+| **Project Card** | Cover image with hover zoom, blue-tinted tag pills, title shifts to blue on hover. |
+| **Timeline Item** | Vertical line with colored dot (blue for current, lighter blue for leadership, gray for past). Card lifts and blues border on hover. |
+| **Marquee** | Full-bleed, continuous scroll. Items separated by blue dot dividers. |
+| **Footer** | Social icons in circular buttons with blue hover. `.link-draw` underline on nav links. Personal tagline. |
+| **Dark CTA Section** | Cloud background, white text, blue accent button. Creates dramatic visual break. |
+| **Text Selection** | Abyss background (#EFF6FF) with Ice text (#2563EB). |
 
-## 10 · Usage Guidelines
-### ✓ Do
-- Use the 3-tier surface system: Void → Obsidian → Gunmetal for depth
-- Reserve Cerulean exclusively for interactive elements
-- Use Abyss for selected/active states and tinted backgrounds
-- Apply Cloud (#D6DEE6) for headings, Silver for body text
-- Use Slate borders for subtle structural separation
-- Add the blue glow shadow for focus and hover emphasis
+## 10 -- Usage Guidelines
+### Do
+- Use white backgrounds as the foundation, with Obsidian (#FAFAFA) and Gunmetal (#F5F5F5) for subtle surface variation
+- Use the unified blue accent family for both interactive elements and personality highlights
+- Apply asymmetric layouts and varied section rhythms to avoid monotony
+- Use the marquee, hover-zoom, and link-draw animations to add life
+- Invert to dark sections (Cloud bg) sparingly for dramatic contrast
 - Keep Open Sans weights consistent: 300 display, 700 headings, 400 body, 600 UI
+- Let images breathe with overflow-hidden containers and hover-zoom
+- Use oversized hero typography with blue-colored accent words
 
-### ✕ Don't
-- Use pure white (#FFF) for text — Cloud is the brightest text token
-- Overuse Cerulean for decoration — it's a signal color
-- Place Silver body text on Gunmetal (insufficient contrast)
-- Mix surface levels incorrectly (e.g., Obsidian card on Obsidian bg)
-- Use heavy drop shadows on dark surfaces — prefer subtle or glow
-- Introduce additional accent hues outside the blue family
-- Reduce border-radius below 6px — the system favors soft edges
+### Don't
+- Use pure black (#000) for text -- Cloud (#171717) is the darkest text token
+- Use any accent color outside the blue family -- the system is intentionally monochromatic in its accent
+- Overuse dark inverted sections -- one per page maximum
+- Apply the marquee animation to anything other than horizontal tickers
+- Use heavy drop shadows -- keep opacity under 0.1
+- Create uniform, rigid grid layouts -- asymmetry is intentional
+- Introduce additional accent hues (orange, green, purple, etc.)
+- Reduce border-radius below 6px -- the system favors soft edges
 
 ---
-Dark Interface Design System · Version 2.0 · 10 Color Tokens · Open Sans
+Dynamic Creative Design System / Version 3.1 / 13 Color Tokens / Unified Blue Accent / Open Sans
