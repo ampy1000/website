@@ -1,14 +1,14 @@
-# Design System — Dark Interface
-> Design System v2.0 — Dark Interface
-## 10 tokens extracted from a dark interface
-A comprehensive design system built on a refined dark palette — 7 neutrals and 3 blues. Designed for clarity, depth, and focus using Open Sans across all typographic roles.
+# Design System — Light Interface
+> Design System v2.1 — Light Interface
+## 10 tokens extracted from a light interface
+A comprehensive design system built on a clean white palette — 7 neutrals and 3 blues. Designed for clarity, openness, and focus using Open Sans across all typographic roles.
 ### Meta
 | Key | Value |
 |---|---|
-| Aesthetic | Dark Precision |
+| Aesthetic | Light Precision |
 | Palette | 7 Neutrals · 3 Blues |
 | Typeface | Open Sans |
-| Surfaces | Layered Depth |
+| Surfaces | White & Borders |
 
 ## Tokens
 This document contains the exported design tokens (colors, typography, spacing, radius, shadows, and motion) plus usage guidance.
@@ -16,19 +16,19 @@ This document contains the exported design tokens (colors, typography, spacing, 
 ### Colors
 | Token | Value |
 |---|---|
-| `--abyss` | `#1A3352` |
+| `--abyss` | `#EBF4FF` |
 | `--cerulean` | `#3B82F6` |
-| `--cloud` | `#D6DEE6` |
+| `--cloud` | `#1A2332` |
 | `--error` | `#F87171` |
-| `--gunmetal` | `#1E2A36` |
-| `--ice` | `#60A5FA` |
-| `--info` | `#60A5FA` |
-| `--obsidian` | `#151C25` |
+| `--gunmetal` | `#FFFFFF` |
+| `--ice` | `#2563EB` |
+| `--info` | `#2563EB` |
+| `--obsidian` | `#FFFFFF` |
 | `--pewter` | `#6B7D8E` |
-| `--silver` | `#9BAAB8` |
-| `--slate` | `#2E3C4A` |
+| `--silver` | `#4B5563` |
+| `--slate` | `#D8DFE8` |
 | `--success` | `#34D399` |
-| `--void` | `#0B0F14` |
+| `--void` | `#FFFFFF` |
 | `--warning` | `#FBBF24` |
 
 ### Typography
@@ -88,11 +88,11 @@ This document contains the exported design tokens (colors, typography, spacing, 
 ### Shadows
 | Token | Value |
 |---|---|
-| `--shadow-glow` | `0 0 20px rgba(59, 130, 246, 0.15)` |
-| `--shadow-lg` | `0 8px 30px rgba(0,0,0,0.45)` |
-| `--shadow-md` | `0 4px 12px rgba(0,0,0,0.4)` |
-| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.3)` |
-| `--shadow-xl` | `0 20px 60px rgba(0,0,0,0.5)` |
+| `--shadow-glow` | `0 0 20px rgba(59, 130, 246, 0.1)` |
+| `--shadow-lg` | `0 8px 30px rgba(0,0,0,0.1)` |
+| `--shadow-md` | `0 4px 12px rgba(0,0,0,0.08)` |
+| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.06)` |
+| `--shadow-xl` | `0 20px 60px rgba(0,0,0,0.12)` |
 
 ### Motion
 | Token | Value |
@@ -104,39 +104,39 @@ This document contains the exported design tokens (colors, typography, spacing, 
 | `--ease-out` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
 
 ## 01 · Design Principles
-These principles guide every design decision, ensuring consistency and clarity across the dark interface.
+These principles guide every design decision, ensuring consistency and clarity across the light interface.
 
-### I. Layered Depth
-Use surface elevation through color — Void, Obsidian, Gunmetal — to create visual hierarchy. Each layer communicates importance through subtle tonal shifts, not heavy shadows.
+### I. White Space & Borders
+Use a clean white background throughout. Visual hierarchy is created through borders, spacing, and subtle shadows rather than surface color variation. All surfaces are white.
 
 ### II. Blue as Signal
 Cerulean is reserved for interactive elements: buttons, links, focus rings, and active states. It should draw the eye precisely where action is needed, never used decoratively.
 
 ### III. Readable Contrast
-Cloud for headings, Silver for body, Pewter for secondary. Each text color is tuned for legibility against dark surfaces while maintaining a calm, low-fatigue reading experience.
+Cloud (#1A2332) for headings, Silver (#4B5563) for body, Pewter for secondary. Each text color is tuned for legibility against white surfaces while maintaining a calm, professional reading experience.
 
 ## 02 · Color Palette
-10 tokens extracted from a dark interface — 7 neutrals, 3 blues. Each token has a named role and clear usage context.
+10 tokens extracted from a light interface — 7 neutrals, 3 blues. Each token has a named role and clear usage context.
 
 ### Neutrals
 
 | Token | Role | Hex | Usage |
 |---|---|---|---|
-| **Void** | Background | `#0B0F14` | Primary surface — deepest layer of the interface |
-| **Obsidian** | Surface | `#151C25` | Cards, modals, and elevated containers |
-| **Gunmetal** | Surface Alt | `#1E2A36` | Secondary surfaces, sidebar backgrounds |
-| **Slate** | Border / Divider | `#2E3C4A` | Subtle separations between content areas |
+| **Void** | Background | `#FFFFFF` | Primary surface — clean white base |
+| **Obsidian** | Surface | `#FFFFFF` | Cards, modals, and elevated containers (white, separated by borders/shadows) |
+| **Gunmetal** | Surface Alt | `#FFFFFF` | Secondary surfaces, sidebar backgrounds (white, separated by borders) |
+| **Slate** | Border / Divider | `#D8DFE8` | Light gray separations between content areas |
 | **Pewter** | Muted Text | `#6B7D8E` | Secondary labels, placeholders, captions |
-| **Silver** | Body Text | `#9BAAB8` | Primary readable content on dark surfaces |
-| **Cloud** | Heading Text | `#D6DEE6` | Titles, headings, high-emphasis text |
+| **Silver** | Body Text | `#4B5563` | Primary readable content on white surfaces |
+| **Cloud** | Heading Text | `#1A2332` | Titles, headings, high-emphasis text |
 
 ### Blues — Accent & Action
 
 | Token | Role | Hex | Usage |
 |---|---|---|---|
 | **Cerulean** | Primary Action | `#3B82F6` | Buttons, links, active states, focus rings |
-| **Ice** | Accent Light | `#60A5FA` | Hover states, badges, subtle highlights |
-| **Abyss** | Accent Muted | `#1A3352` | Selected rows, active nav items, tinted cards |
+| **Ice** | Accent Dark | `#2563EB` | Hover states, badges, emphasis highlights |
+| **Abyss** | Accent Tint | `#EBF4FF` | Selected rows, active nav items, tinted backgrounds |
 
 ### Semantic
 
@@ -148,15 +148,15 @@ Cloud for headings, Silver for body, Pewter for secondary. Each text color is tu
 | **Info** | `#60A5FA` |
 
 ## 03 · Typography
-Open Sans serves all typographic roles — a versatile humanist sans-serif with excellent legibility on dark backgrounds.
+Open Sans serves all typographic roles — a versatile humanist sans-serif with excellent legibility on white backgrounds.
 
 ### Font usage
 
 | Role | Face | Notes | Sample |
 |---|---|---|---|
-| Display · Light 300 | **Open Sans Light** | Used for hero headlines and large display text. The thin weight creates elegant contrast against bold dark surfaces. | We give a voice to art in all its manifestations |
-| Headings · Bold 700 | **Open Sans Bold** | Section headers and emphasis. Cloud color (#D6DEE6) ensures clear visual hierarchy on dark backgrounds. | Capital Letters Exhibition |
-| Body · Regular 400 | **Open Sans Regular** | Body copy and general content. Silver color (#9BAAB8) is tuned for comfortable reading at length on dark surfaces. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Designed for sustained readability. |
+| Display · Light 300 | **Open Sans Light** | Used for hero headlines and large display text. The thin weight creates elegant contrast against clean white surfaces. | We give a voice to art in all its manifestations |
+| Headings · Bold 700 | **Open Sans Bold** | Section headers and emphasis. Cloud color (#1A2332) ensures clear visual hierarchy on white backgrounds. | Capital Letters Exhibition |
+| Body · Regular 400 | **Open Sans Regular** | Body copy and general content. Silver color (#4B5563) is tuned for comfortable reading at length on white surfaces. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Designed for sustained readability. |
 | UI · SemiBold 600 | **Open Sans SemiBold** | Navigation, buttons, labels, overlines. Used with wide letter-spacing and uppercase transforms for structural clarity. | Activities · Projects · News · Exhibitions |
 
 ### Type scale specimens
@@ -232,7 +232,7 @@ Six button variants for different levels of emphasis. Primary uses Cerulean, wit
 | Learn More | MD | `ghost` |
 
 ## 06 · Shadows & Elevation
-Deep, dark shadows for true depth. The glow variant uses Cerulean for focus states and interactive emphasis.
+Soft, subtle shadows for gentle elevation. The glow variant uses Cerulean for focus states and interactive emphasis.
 
 | Level | Token |
 |---|---|
@@ -243,7 +243,7 @@ Deep, dark shadows for true depth. The glow variant uses Cerulean for focus stat
 | Glow | `--shadow-glow` |
 
 ## 07 · Motion & Interaction
-Subtle, professional interactions. The glow effect is unique to the dark theme — drawing attention through light emission.
+Subtle, professional interactions. The glow effect draws attention through soft blue emission on white surfaces.
 
 ### Interaction patterns
 - Lift
@@ -257,38 +257,37 @@ Subtle, professional interactions. The glow effect is unique to the dark theme �
 - Slow · 500ms
 
 ## 08 · Layout & Grid
-12-column grid with generous gutters. Surface layering (Void → Obsidian → Gunmetal) defines spatial hierarchy.
+12-column grid with generous gutters. White surfaces with borders and spacing define spatial hierarchy.
 
 **Specs:** Container: max-width 1200px · Gutter: 24px · Side padding: 32px–80px · Border radius: 10–16px
 
 ## 09 · Component Patterns
-Core UI patterns adapted for the dark interface. Each component uses the layered depth model for visual elevation.
+Core UI patterns adapted for the light interface. Each component uses borders and shadows for visual separation.
 
 | Component | Notes |
 |---|---|
 | **Navigation Bar** | Open Sans SemiBold links. Active state uses Cerulean with bottom border accent. |
-| **Content Card** | Obsidian surface with Slate border. Badge uses Abyss background with Ice text. |
-| **Text Input** | Void background, Slate border. Focus state uses Cerulean border with subtle blue glow ring. |
-| **Toggle Switch** | Slate track when off, Cerulean when on. Cloud thumb for contrast on both states. |
+| **Content Card** | White surface with Slate border. Badge uses Abyss (#EBF4FF) background with Ice text. |
+| **Text Input** | White background, Slate border. Focus state uses Cerulean border with subtle blue glow ring. |
+| **Toggle Switch** | Slate track when off, Cerulean when on. White thumb for contrast on both states. |
 
 ## 10 · Usage Guidelines
-### ✓ Do
-- Use the 3-tier surface system: Void → Obsidian → Gunmetal for depth
+### Do
+- Use white backgrounds throughout, separated by borders and spacing
 - Reserve Cerulean exclusively for interactive elements
-- Use Abyss for selected/active states and tinted backgrounds
-- Apply Cloud (#D6DEE6) for headings, Silver for body text
-- Use Slate borders for subtle structural separation
+- Use Abyss (#EBF4FF) for selected/active states and tinted backgrounds
+- Apply Cloud (#1A2332) for headings, Silver (#4B5563) for body text
+- Use Slate (#D8DFE8) borders for subtle structural separation
 - Add the blue glow shadow for focus and hover emphasis
 - Keep Open Sans weights consistent: 300 display, 700 headings, 400 body, 600 UI
 
-### ✕ Don't
-- Use pure white (#FFF) for text — Cloud is the brightest text token
+### Don't
+- Use pure black (#000) for text — Cloud (#1A2332) is the darkest text token
 - Overuse Cerulean for decoration — it's a signal color
-- Place Silver body text on Gunmetal (insufficient contrast)
-- Mix surface levels incorrectly (e.g., Obsidian card on Obsidian bg)
-- Use heavy drop shadows on dark surfaces — prefer subtle or glow
+- Use colored or gray backgrounds for surfaces — keep them white
+- Use heavy drop shadows — prefer subtle, low-opacity shadows
 - Introduce additional accent hues outside the blue family
 - Reduce border-radius below 6px — the system favors soft edges
 
 ---
-Dark Interface Design System · Version 2.0 · 10 Color Tokens · Open Sans
+Light Interface Design System · Version 2.1 · 10 Color Tokens · Open Sans
