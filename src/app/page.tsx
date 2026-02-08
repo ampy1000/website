@@ -84,13 +84,13 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
+              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)] bg-[#FAF7F2]">
                 <Image
-                  src="/images/hero-workspace.jpg"
-                  alt="A modern creative workspace with design tools and technology"
+                  src="/images/cody-avatar.png"
+                  alt="Illustrated portrait of Cody Wales"
                   width={600}
                   height={700}
-                  className="w-full h-[400px] md:h-[520px] object-cover"
+                  className="w-full h-[400px] md:h-[520px] object-contain"
                   priority
                 />
               </div>
