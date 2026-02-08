@@ -57,7 +57,7 @@ export default function ProjectsPage() {
         <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           Projects
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Things I&apos;ve Built
         </h1>
         <p className="text-lg text-body leading-relaxed max-w-2xl">
@@ -120,7 +120,7 @@ export default function ProjectsPage() {
             Collaboration
           </p>
           <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-8" />
-          <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
+          <h2 className="font-sans text-2xl font-bold text-foreground mb-4">
             Want to Work Together?
           </h2>
           <p className="text-muted mb-10 max-w-lg mx-auto leading-relaxed">
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
             href="https://www.linkedin.com/in/codywales"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+            className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
           >
             Get in Touch
           </a>

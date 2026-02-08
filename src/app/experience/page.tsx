@@ -55,7 +55,7 @@ export default function ExperiencePage() {
         <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           Experience
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Work History
         </h1>
         <p className="text-lg text-body leading-relaxed max-w-2xl">
@@ -109,7 +109,7 @@ export default function ExperiencePage() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
             Capabilities
           </p>
-          <h2 className="font-serif text-2xl font-bold text-foreground mb-10">Skills & Expertise</h2>
+          <h2 className="font-sans text-2xl font-bold text-foreground mb-10">Skills & Expertise</h2>
           <div className="flex flex-wrap gap-3">
             {[
               "Customer Experience (CX)",

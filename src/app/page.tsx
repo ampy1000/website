@@ -49,7 +49,7 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
               Welcome
             </p>
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight mb-8 text-balance">
+            <h1 className="font-sans text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight mb-8 text-balance">
               We give a voice to experience in all its manifestations
             </h1>
             <p className="text-body leading-relaxed mb-4 max-w-lg">
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+                className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
               >
                 View More
               </Link>
@@ -86,7 +86,7 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
               Core Values
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-balance">
+            <h2 className="font-sans text-3xl md:text-4xl font-bold text-foreground text-balance">
               What Drives Me
             </h2>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
                 About
               </p>
-              <h2 className="font-serif text-3xl font-bold text-foreground mb-6 text-balance">
+              <h2 className="font-sans text-3xl font-bold text-foreground mb-6 text-balance">
                 Designing Experiences That Matter
               </h2>
               <p className="text-body leading-relaxed mb-4">
@@ -180,7 +180,7 @@ export default function Home() {
             Collaborators
           </p>
           <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-10" />
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="font-sans text-2xl md:text-3xl font-bold text-foreground mb-4">
             Let&apos;s Connect
           </h2>
           <p className="text-muted mb-10 max-w-lg mx-auto leading-relaxed">
@@ -192,7 +192,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/codywales"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+              className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
             >
               Connect on LinkedIn
             </a>

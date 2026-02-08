@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const _inter = Inter({ subsets: ["latin"] });
-const _playfair = Playfair_Display({ subsets: ["latin"] });
+const _openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cody Wales | Experience Designer, Business Builder & Creative",

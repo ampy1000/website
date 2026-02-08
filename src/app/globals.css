@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* Dark palette tokens */
-  --void: #0c1018;
-  --obsidian: #151c28;
-  --gunmetal: #1e2736;
-  --slate: #2f3b4e;
-  --pewter: #7a8494;
-  --silver: #a0a9b8;
-  --cloud: #dce1ea;
-  --cerulean: #3b82f6;
-  --ice: #7eb8f6;
-  --abyss: #1a2d4a;
+  /* Light palette tokens — inverted from dark interface design system */
+  --void: #FFFFFF;
+  --obsidian: #F7F8FA;
+  --gunmetal: #EEF1F5;
+  --slate: #D8DFE8;
+  --pewter: #6B7D8E;
+  --silver: #4B5563;
+  --cloud: #1A2332;
+  --cerulean: #3B82F6;
+  --ice: #2563EB;
+  --abyss: #EBF4FF;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback';
-  --font-serif: 'Playfair Display', 'Playfair Display Fallback';
+  --font-sans: 'Open Sans', 'Open Sans Fallback', sans-serif;
 
   --color-background: var(--void);
   --color-foreground: var(--cloud);
@@ -30,6 +29,12 @@
   --color-card-bg: var(--obsidian);
   --color-section-alt: var(--gunmetal);
   --color-abyss: var(--abyss);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.1);
 }
 
 body {

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-14">
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           <div>
-            <h3 className="font-serif text-lg font-bold text-foreground mb-2">Cody Wales</h3>
+            <h3 className="font-sans text-lg font-bold text-foreground mb-2">Cody Wales</h3>
             <p className="text-muted text-sm max-w-xs leading-relaxed">
               Experience designer, business builder &amp; creative.
             </p>

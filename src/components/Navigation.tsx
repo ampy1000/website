@@ -18,7 +18,7 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link href="/" className="font-serif text-xl font-bold tracking-tight text-foreground">
+        <Link href="/" className="font-sans text-xl font-bold tracking-tight text-foreground">
           Cody Wales
         </Link>
 
@@ -44,7 +44,7 @@ export default function Navigation() {
           href="https://www.linkedin.com/in/codywales"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+          className="hidden md:inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
         >
           Connect
         </a>
@@ -83,7 +83,7 @@ export default function Navigation() {
                 href="https://www.linkedin.com/in/codywales"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-background transition-colors"
+                className="inline-flex items-center px-5 py-2 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
               >
                 Connect
               </a>

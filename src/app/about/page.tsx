@@ -14,7 +14,7 @@ export default function AboutPage() {
         <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
           About Me
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
           Hey, I&apos;m Cody.
         </h1>
         <p className="text-lg text-body leading-relaxed max-w-2xl">
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="grid md:grid-cols-2 gap-14">
             <div>
-              <h2 className="font-serif text-2xl font-bold text-foreground mb-6">My Story</h2>
+              <h2 className="font-sans text-2xl font-bold text-foreground mb-6">My Story</h2>
               <div className="space-y-4 text-body leading-relaxed">
                 <p>
                   My journey into healthcare began when a close friend&apos;s snowmobile accident
@@ -82,7 +82,7 @@ export default function AboutPage() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
             Methodology
           </p>
-          <h2 className="font-serif text-2xl font-bold text-foreground mb-12">My Approach</h2>
+          <h2 className="font-sans text-2xl font-bold text-foreground mb-12">My Approach</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -125,16 +125,16 @@ export default function AboutPage() {
           <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
             Philosophy
           </p>
-          <h2 className="font-serif text-2xl font-bold text-foreground mb-10">Key Beliefs</h2>
+          <h2 className="font-sans text-2xl font-bold text-foreground mb-10">Key Beliefs</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <blockquote className="border-l-2 border-accent rounded-r-2xl bg-surface-alt/50 pl-6 pr-6 py-6">
-              <p className="text-body leading-relaxed italic font-serif text-lg">
+              <p className="text-body leading-relaxed italic font-sans text-lg">
                 &ldquo;Realize the value of a strong network &mdash; you can accomplish so much
                 more with a diverse group than you can alone.&rdquo;
               </p>
             </blockquote>
             <blockquote className="border-l-2 border-accent rounded-r-2xl bg-surface-alt/50 pl-6 pr-6 py-6">
-              <p className="text-body leading-relaxed italic font-serif text-lg">
+              <p className="text-body leading-relaxed italic font-sans text-lg">
                 &ldquo;Feedback is a gift &mdash; the sooner and more often you&apos;re willing
                 to get it, the better the outcome of the product.&rdquo;
               </p>
