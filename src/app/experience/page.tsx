@@ -47,93 +47,124 @@ const experiences = [
   },
 ];
 
+const skills = [
+  "Customer Experience (CX)",
+  "Service Design",
+  "Journey Mapping",
+  "Service Blueprinting",
+  "Innovation Strategy",
+  "Consumer Insights",
+  "Product Strategy",
+  "Human-Centered Design",
+  "Cross-Functional Collaboration",
+  "Go-to-Market Strategy",
+  "Healthcare",
+  "Marketing Communications",
+  "Brand Strategy",
+  "Stakeholder Management",
+];
+
 export default function ExperiencePage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
-          Experience
-        </p>
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
-          Work History
-        </h1>
-        <p className="text-lg text-body leading-relaxed max-w-2xl">
-          From marketing internships to global innovation strategy at one of the world&apos;s
-          leading pharmaceutical companies, my career has been driven by a passion for
-          understanding people and creating meaningful experiences.
-        </p>
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-8 md:pt-32 md:pb-16">
+        <div className="grid md:grid-cols-12 gap-8 items-end">
+          <div className="md:col-span-7">
+            <p className="text-warm font-semibold text-sm tracking-wide mb-6">
+              Experience
+            </p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
+              Work<br />
+              <span className="text-warm">History.</span>
+            </h1>
+          </div>
+          <div className="md:col-span-5 pb-4">
+            <p className="text-lg text-body leading-relaxed">
+              From marketing internships to global innovation strategy at one of the world{"'"}s
+              leading pharmaceutical companies, my career has been driven by a passion for
+              understanding people.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Timeline */}
-      <section className="bg-surface">
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          <div className="space-y-8">
-            {experiences.map((exp, i) => (
-              <div key={i} className="relative">
-                <div className="bg-surface-alt rounded-2xl p-8 border border-border hover:border-accent/40 transition-colors">
-                  <div className="flex flex-wrap items-start gap-3 mb-4">
-                    {exp.type === "current" && (
-                      <span className="inline-block px-3 py-1 rounded-full bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
-                        Current
-                      </span>
-                    )}
-                    {exp.type === "leadership" && (
-                      <span className="inline-block px-3 py-1 rounded-full bg-abyss text-accent-light text-xs uppercase tracking-[0.1em] font-medium border border-accent/30">
-                        Leadership
-                      </span>
-                    )}
+      <section className="border-t border-border">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-4 md:left-8 top-0 bottom-0 w-px bg-border" aria-hidden="true" />
+
+            <div className="space-y-12">
+              {experiences.map((exp, i) => (
+                <div key={i} className="relative pl-14 md:pl-24 group">
+                  {/* Timeline dot */}
+                  <div className={`absolute left-2.5 md:left-6.5 top-2 w-3 h-3 rounded-full border-2 ${
+                    exp.type === "current"
+                      ? "bg-warm border-warm"
+                      : exp.type === "leadership"
+                      ? "bg-accent border-accent"
+                      : "bg-border border-muted"
+                  }`} />
+
+                  <div className="rounded-2xl border border-border p-8 md:p-10 bg-background hover:shadow-[var(--shadow-md)] transition-shadow group-hover:border-warm/30">
+                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                      {exp.type === "current" && (
+                        <span className="inline-block px-3 py-1 rounded-full bg-warm-light text-warm-deep text-xs uppercase tracking-[0.1em] font-semibold">
+                          Current
+                        </span>
+                      )}
+                      {exp.type === "leadership" && (
+                        <span className="inline-block px-3 py-1 rounded-full bg-abyss text-accent text-xs uppercase tracking-[0.1em] font-semibold">
+                          Leadership
+                        </span>
+                      )}
+                      <p className="text-warm font-semibold text-sm">{exp.company}</p>
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-bold text-foreground mb-5 leading-tight">
+                      {exp.role}
+                    </h3>
+                    <ul className="space-y-3">
+                      {exp.description.map((desc, j) => (
+                        <li key={j} className="flex items-start gap-3">
+                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-warm flex-shrink-0" />
+                          <span className="text-body leading-relaxed">{desc}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-1">
-                    {exp.role}
-                  </h3>
-                  <p className="text-accent-light font-medium mb-5">{exp.company}</p>
-                  <ul className="space-y-3">
-                    {exp.description.map((desc, j) => (
-                      <li key={j} className="flex items-start gap-3">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                        <span className="text-body leading-relaxed text-sm">{desc}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Skills */}
-      <section>
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
-            Capabilities
-          </p>
-          <h2 className="font-sans text-2xl font-bold text-foreground mb-10">Skills & Expertise</h2>
-          <div className="flex flex-wrap gap-3">
-            {[
-              "Customer Experience (CX)",
-              "Service Design",
-              "Journey Mapping",
-              "Service Blueprinting",
-              "Innovation Strategy",
-              "Consumer Insights",
-              "Product Strategy",
-              "Human-Centered Design",
-              "Cross-Functional Collaboration",
-              "Go-to-Market Strategy",
-              "Healthcare",
-              "Marketing Communications",
-              "Brand Strategy",
-              "Stakeholder Management",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="px-4 py-2 rounded-full bg-abyss text-accent-light text-sm font-medium border border-accent/20"
-              >
-                {skill}
-              </span>
-            ))}
+      <section className="bg-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-12 items-start">
+            <div className="md:col-span-4">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-4">
+                Capabilities
+              </p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-background leading-tight">
+                Skills &<br />Expertise
+              </h2>
+            </div>
+            <div className="md:col-span-8">
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-5 py-2.5 rounded-full text-sm font-semibold border border-background/20 text-background/80 hover:bg-warm hover:text-white hover:border-warm transition-colors cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

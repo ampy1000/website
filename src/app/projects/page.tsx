@@ -15,7 +15,6 @@ const projects = [
       "Migrated and completely redesigned the ACHE of Central Florida chapter website. This project led to an invitation to join the Board of Directors as Communications Chair, where the focus was on building the chapter brand to better deliver the mission of being the 'premier professional membership society for leaders of healthcare.'",
     tags: ["Web Design", "Brand Strategy", "Healthcare"],
     image: "/images/project-ache.jpg",
-    icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
   },
   {
     title: "Coffee with Cody",
@@ -24,7 +23,6 @@ const projects = [
       "A platform that leverages coffee — a favorite beverage — to establish connections with interesting people in business, arts, and life. The initiative explores what has brought people to where they are today through meaningful conversations.",
     tags: ["Community Building", "Networking", "Storytelling"],
     image: "/images/project-coffee.jpg",
-    icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z",
   },
   {
     title: "The Produced Podcast",
@@ -33,7 +31,6 @@ const projects = [
       "Born from the venture with Joshua Martin Studios, this podcast was created to share learnings from building a creative enterprise. The show features dialogue between hosts as well as conversations with other creatives, exploring the intersection of business and art.",
     tags: ["Podcasting", "Creative Business", "Media"],
     image: "/images/project-podcast.jpg",
-    icon: "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z",
   },
   {
     title: "Gear Replacement Initiative",
@@ -42,7 +39,6 @@ const projects = [
       "When a friend named Joshua had his gear stolen, stepped in to help by reaching out directly to gear manufacturers requesting free replacements. Multiple manufacturers responded positively, demonstrating the power of initiative and community.",
     tags: ["Community", "Initiative", "Problem Solving"],
     image: "/images/project-gear.jpg",
-    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
   },
   {
     title: "Flying W Entertainment",
@@ -51,7 +47,6 @@ const projects = [
       "Founded and operates an entertainment company, combining a passion for music and live performance with business acumen. As a national touring musician, sound bath facilitator, and drummer, this venture brings creative experiences to audiences.",
     tags: ["Entertainment", "Music", "Business"],
     image: "/images/project-flying-w.jpg",
-    icon: "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3",
   },
 ];
 
@@ -59,41 +54,81 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
+      <section className="max-w-6xl mx-auto px-6 pt-20 pb-8 md:pt-32 md:pb-16">
+        <p className="text-warm font-semibold text-sm tracking-wide mb-6">
           Projects
         </p>
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8 text-balance">
-          Things I&apos;ve Built
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
+          Things I{"'"}ve<br />
+          <span className="text-warm">Built.</span>
         </h1>
-        <p className="text-lg text-body leading-relaxed max-w-2xl">
+        <p className="text-lg md:text-xl text-body leading-relaxed max-w-xl">
           From redesigning healthcare websites to launching podcasts and entertainment
-          ventures, here are some of the projects I&apos;m most proud of.
+          ventures, here are some of the projects I{"'"}m most proud of.
         </p>
       </section>
 
-      {/* Projects Grid */}
-      <section className="bg-surface">
+      {/* Featured Project */}
+      <section className="max-w-6xl mx-auto px-6 pb-12">
+        <div className="rounded-3xl overflow-hidden border border-border bg-foreground group hover-zoom">
+          <div className="grid md:grid-cols-12">
+            <div className="md:col-span-7 relative h-[300px] md:h-[450px] overflow-hidden">
+              <Image
+                src={projects[0].image}
+                alt={projects[0].title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="md:col-span-5 p-8 md:p-12 flex flex-col justify-center">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-3">
+                {projects[0].category}
+              </p>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-background mb-4 leading-tight">
+                {projects[0].title}
+              </h2>
+              <p className="text-background/60 leading-relaxed mb-6">
+                {projects[0].description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {projects[0].tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 rounded-full bg-background/10 text-background/70 text-xs font-semibold border border-background/10"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Remaining Projects Grid */}
+      <section className="border-t border-border">
         <div className="max-w-6xl mx-auto px-6 py-20">
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {projects.slice(1).map((project) => (
               <div
                 key={project.title}
-                className="bg-surface-alt rounded-2xl border border-border hover:border-accent/40 transition-colors overflow-hidden"
+                className="group rounded-3xl border border-border overflow-hidden bg-background hover:shadow-[var(--shadow-lg)] transition-shadow hover-zoom"
               >
-                <div className="relative h-48 w-full">
+                <div className="relative h-56 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors" />
                 </div>
                 <div className="p-8">
-                  <p className="text-xs uppercase tracking-[0.2em] text-accent-light font-medium mb-2">
+                  <p className="text-warm font-semibold text-xs tracking-wide uppercase mb-2">
                     {project.category}
                   </p>
-                  <h3 className="text-xl font-bold text-foreground mb-3">
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-warm-deep transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-sm text-body leading-relaxed mb-6">
@@ -103,7 +138,7 @@ export default function ProjectsPage() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 rounded-full bg-abyss text-muted text-xs font-medium border border-accent/20"
+                        className="px-3 py-1 rounded-full bg-warm-light text-warm-deep text-xs font-semibold"
                       >
                         {tag}
                       </span>
@@ -117,27 +152,29 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA */}
-      <section>
-        <div className="max-w-6xl mx-auto px-6 py-20 text-center">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
-            Collaboration
-          </p>
-          <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-8" />
-          <h2 className="font-sans text-2xl font-bold text-foreground mb-4">
-            Want to Work Together?
-          </h2>
-          <p className="text-muted mb-10 max-w-lg mx-auto leading-relaxed">
-            I&apos;m always open to exploring new opportunities and collaborations.
-            Reach out and let&apos;s create something meaningful.
-          </p>
-          <a
-            href="https://www.linkedin.com/in/codywales"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
-          >
-            Get in Touch
-          </a>
+      <section className="bg-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-8">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-4">
+                Collaboration
+              </p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-background leading-tight">
+                Want to work together?<br />
+                <span className="text-warm">Let{"'"}s make it happen.</span>
+              </h2>
+            </div>
+            <div className="md:col-span-4 flex md:justify-end">
+              <a
+                href="https://www.linkedin.com/in/codywales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-3.5 rounded-full bg-warm text-white text-xs uppercase tracking-[0.15em] font-semibold hover:bg-warm-deep transition-colors"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -6,119 +6,144 @@ const values = [
     title: "Exploration",
     description:
       "Constantly seeking the unknown and discovering innovative paths to create exceptional experiences.",
-    icon: "M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9 12l2 2 4-4",
+    number: "01",
   },
   {
     title: "Growth",
     description:
       "Persistently driven to find better ways of doing things and evolving both personally and professionally.",
-    icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
+    number: "02",
   },
   {
     title: "Intention",
     description:
       "Ensuring every task is meaningful and executed to the highest standard with purpose and mindfulness.",
-    icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+    number: "03",
   },
   {
     title: "Service",
     description:
       "Striving to develop myself to better support and uplift others through meaningful work.",
-    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    number: "04",
   },
   {
     title: "Boldness",
     description:
       "A willingness to challenge conventional wisdom and push boundaries to drive innovation.",
-    icon: "M13 10V3L4 14h7v7l9-11h-7z",
+    number: "05",
   },
+];
+
+const marqueeItems = [
+  "Experience Design",
+  "Innovation Strategy",
+  "Human-Centered Design",
+  "Service Blueprinting",
+  "Journey Mapping",
+  "Creative Direction",
+  "Brand Strategy",
+  "Consumer Insights",
+  "Drumming",
+  "Sound Healing",
 ];
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section>
-        <div className="max-w-6xl mx-auto px-6 py-28 md:py-40">
-          <div className="grid md:grid-cols-2 gap-14 items-center">
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-6">
-              Welcome
-            </p>
-            <h1 className="font-sans text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight mb-8 text-balance">
-              We give a voice to experience in all its manifestations
-            </h1>
-            <p className="text-body leading-relaxed mb-4 max-w-lg">
-              I am an <span className="text-foreground font-medium">experience designer</span>,{" "}
-              <span className="text-foreground font-medium">business builder</span> and{" "}
-              <span className="text-foreground font-medium">creative</span>.
-            </p>
-            <p className="text-muted leading-relaxed mb-10 max-w-lg">
-              I help organizations transform consumer insights into strategic innovation
-              that drives business growth through human-centered design.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/about"
-                className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
-              >
-                View More
-              </Link>
-              <Link
-                href="/experience"
-                className="inline-flex items-center px-7 py-3 rounded-full border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
-              >
-                My Experience
-              </Link>
+      <section className="relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 pt-20 pb-8 md:pt-32 md:pb-16">
+          <div className="grid md:grid-cols-12 gap-8 items-end">
+            <div className="md:col-span-7">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-6">
+                Experience Designer / Business Builder / Creative
+              </p>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
+                We give a<br />
+                voice to<br />
+                <span className="text-warm">experience.</span>
+              </h1>
+              <p className="text-body leading-relaxed max-w-md text-lg mb-10">
+                I help organizations transform consumer insights into strategic
+                innovation that drives business growth through human-centered design.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center px-8 py-3.5 rounded-full bg-foreground text-background text-xs uppercase tracking-[0.15em] font-semibold hover:bg-warm transition-colors"
+                >
+                  About Me
+                </Link>
+                <Link
+                  href="/projects"
+                  className="inline-flex items-center px-8 py-3.5 rounded-full border-2 border-foreground text-foreground text-xs uppercase tracking-[0.15em] font-semibold hover:border-warm hover:text-warm transition-colors"
+                >
+                  View Projects
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="hidden md:block relative">
-            <div className="rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-lg)]">
-              <Image
-                src="/images/hero-workspace.jpg"
-                alt="A modern creative workspace with design tools and technology"
-                width={600}
-                height={500}
-                className="w-full h-auto object-cover"
-                priority
-              />
+            <div className="md:col-span-5 relative">
+              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
+                <Image
+                  src="/images/hero-workspace.jpg"
+                  alt="A modern creative workspace with design tools and technology"
+                  width={600}
+                  height={700}
+                  className="w-full h-[400px] md:h-[520px] object-cover"
+                  priority
+                />
+              </div>
+              {/* Floating accent element */}
+              <div className="absolute -bottom-4 -left-4 bg-warm text-white rounded-2xl px-6 py-4 shadow-[var(--shadow-lg)]">
+                <p className="text-xs uppercase tracking-wider font-semibold">Currently at</p>
+                <p className="font-bold text-lg">Pfizer</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="bg-surface">
-        <div className="max-w-6xl mx-auto px-6 py-24">
-          <div className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
-              Core Values
-            </p>
-            <h2 className="font-sans text-3xl md:text-4xl font-bold text-foreground text-balance">
-              What Drives Me
-            </h2>
+      {/* Scrolling Marquee */}
+      <section className="border-y border-border py-5 overflow-hidden mt-8 md:mt-16">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {[...marqueeItems, ...marqueeItems].map((item, i) => (
+            <span key={i} className="mx-8 text-sm uppercase tracking-[0.2em] font-semibold text-muted flex items-center gap-8">
+              {item}
+              <span className="w-1.5 h-1.5 rounded-full bg-warm inline-block" />
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Values Section - asymmetric layout */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-8 mb-16">
+            <div className="md:col-span-5">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-4">
+                Core Values
+              </p>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-foreground leading-tight text-balance">
+                What Drives Me
+              </h2>
+            </div>
+            <div className="md:col-span-7 flex items-end">
+              <p className="text-body leading-relaxed text-lg max-w-lg">
+                These principles shape every decision I make -- from designing patient
+                experiences at Pfizer to performing on stage with my band.
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-3xl overflow-hidden">
             {values.map((value) => (
               <div
                 key={value.title}
-                className="bg-surface-alt rounded-2xl p-7 border border-border hover:border-accent/40 transition-colors"
+                className="bg-background p-8 md:p-10 group hover:bg-warm-light transition-colors"
               >
-                <div className="w-10 h-10 rounded-xl bg-abyss flex items-center justify-center mb-5">
-                  <svg
-                    className="w-5 h-5 text-accent-light"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d={value.icon} />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+                <span className="text-5xl font-extrabold text-border group-hover:text-warm/20 transition-colors leading-none">
+                  {value.number}
+                </span>
+                <h3 className="text-xl font-bold text-foreground mt-4 mb-3 group-hover:text-warm-deep transition-colors">
                   {value.title}
                 </h3>
                 <p className="text-sm text-muted leading-relaxed">
@@ -126,56 +151,74 @@ export default function Home() {
                 </p>
               </div>
             ))}
+            {/* Extra cell for visual balance */}
+            <div className="bg-warm p-8 md:p-10 flex flex-col justify-center items-center text-center">
+              <p className="text-white/80 text-sm uppercase tracking-wider font-semibold mb-2">
+                Let{"'"}s Connect
+              </p>
+              <p className="text-white font-bold text-2xl mb-4">
+                Ready to collaborate?
+              </p>
+              <a
+                href="https://www.linkedin.com/in/codywales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-2.5 rounded-full border-2 border-white text-white text-xs uppercase tracking-[0.15em] font-semibold hover:bg-white hover:text-warm transition-colors"
+              >
+                Say Hello
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Bio Section */}
-      <section>
-        <div className="max-w-6xl mx-auto px-6 py-24">
-          <div className="grid md:grid-cols-2 gap-14 items-center">
-            <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
+      {/* Quick Bio Section - editorial layout */}
+      <section className="border-t border-border">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <div className="grid md:grid-cols-12 gap-12 items-start">
+            <div className="md:col-span-7">
+              <p className="text-warm font-semibold text-sm tracking-wide mb-4">
                 About
               </p>
-              <h2 className="font-sans text-3xl font-bold text-foreground mb-6 text-balance">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8 leading-tight text-balance">
                 Designing Experiences That Matter
               </h2>
-              <p className="text-body leading-relaxed mb-4">
-                As a seasoned customer experience (CX) and service design strategist,
-                I help organizations transform consumer insights into strategic innovation
-                that drives business growth.
-              </p>
-              <p className="text-muted leading-relaxed mb-8">
-                My expertise lies in designing and delivering human-centered experiences
-                that create measurable value for customers and employees.
-              </p>
+              <div className="space-y-4 text-body leading-relaxed text-lg">
+                <p>
+                  As a seasoned customer experience (CX) and service design strategist,
+                  I help organizations transform consumer insights into strategic innovation
+                  that drives business growth.
+                </p>
+                <p className="text-muted">
+                  My expertise lies in designing and delivering human-centered experiences
+                  that create measurable value for customers and employees.
+                </p>
+              </div>
               <Link
                 href="/about"
-                className="text-accent-light font-medium text-xs uppercase tracking-[0.15em] hover:text-accent transition-colors inline-flex items-center gap-2 border-b border-accent-light pb-1"
+                className="mt-8 inline-flex items-center gap-3 link-draw text-foreground font-semibold text-sm uppercase tracking-wider"
               >
-                Explore
+                Read My Story
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
             </div>
-            <div className="bg-surface rounded-2xl border border-border p-8">
-              <div className="space-y-8">
-                <div className="border-b border-border pb-6">
-                  <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Current Role</p>
-                  <p className="font-semibold text-foreground">Senior Manager, Global Commercial Innovation Strategy &amp; Insights</p>
-                  <p className="text-sm text-accent-light mt-1">Pfizer</p>
-                </div>
-                <div className="border-b border-border pb-6">
-                  <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Education</p>
-                  <p className="font-semibold text-foreground">MBA</p>
-                  <p className="text-sm text-accent-light mt-1">Rollins College &ndash; Crummer Graduate School of Business</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Location</p>
-                  <p className="font-semibold text-foreground">Orlando, FL</p>
-                </div>
+            <div className="md:col-span-5 space-y-6">
+              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Current Role</p>
+                <p className="font-bold text-foreground text-lg">Senior Manager, Global Commercial Innovation Strategy & Insights</p>
+                <p className="text-warm font-semibold mt-1">Pfizer</p>
+              </div>
+              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Education</p>
+                <p className="font-bold text-foreground text-lg">MBA</p>
+                <p className="text-warm font-semibold mt-1">Rollins College &ndash; Crummer Graduate School of Business</p>
+              </div>
+              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Creative Life</p>
+                <p className="font-bold text-foreground text-lg">Musician & Sound Bath Facilitator</p>
+                <p className="text-warm font-semibold mt-1">Flying W Entertainment</p>
               </div>
             </div>
           </div>
@@ -183,34 +226,31 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-surface">
-        <div className="max-w-6xl mx-auto px-6 py-20 text-center">
-          <p className="text-xs uppercase tracking-[0.25em] text-accent-light font-medium mb-4">
-            Collaborators
-          </p>
-          <div className="w-12 h-1 bg-accent rounded-full mx-auto mb-10" />
-          <h2 className="font-sans text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Let&apos;s Connect
-          </h2>
-          <p className="text-muted mb-10 max-w-lg mx-auto leading-relaxed">
-            Interested in collaboration, speaking opportunities, or just want to chat?
-            Find me on social media or explore my work.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="https://www.linkedin.com/in/codywales"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-3 rounded-full border border-accent text-accent text-xs uppercase tracking-[0.15em] font-medium hover:bg-accent hover:text-white transition-colors"
-            >
-              Connect on LinkedIn
-            </a>
-            <Link
-              href="/projects"
-              className="inline-flex items-center px-7 py-3 rounded-full border border-border text-foreground text-xs uppercase tracking-[0.15em] font-medium hover:border-accent-light hover:text-accent-light transition-colors"
-            >
-              View My Projects
-            </Link>
+      <section className="bg-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-8">
+              <h2 className="text-3xl md:text-5xl font-extrabold text-background leading-tight">
+                Let{"'"}s create something<br />
+                <span className="text-warm">meaningful together.</span>
+              </h2>
+            </div>
+            <div className="md:col-span-4 flex md:justify-end gap-4 flex-wrap">
+              <a
+                href="https://www.linkedin.com/in/codywales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-3.5 rounded-full bg-warm text-white text-xs uppercase tracking-[0.15em] font-semibold hover:bg-warm-deep transition-colors"
+              >
+                Connect on LinkedIn
+              </a>
+              <Link
+                href="/projects"
+                className="inline-flex items-center px-8 py-3.5 rounded-full border-2 border-background/30 text-background text-xs uppercase tracking-[0.15em] font-semibold hover:border-warm hover:text-warm transition-colors"
+              >
+                View Projects
+              </Link>
+            </div>
           </div>
         </div>
       </section>
