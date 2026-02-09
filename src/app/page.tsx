@@ -83,17 +83,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="md:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
-                <Image
-                  src="/images/cody-avatar.png"
-                  alt="Illustrated portrait of Cody Wales"
-                  width={600}
-                  height={700}
-                  className="w-full h-[400px] md:h-[520px] object-contain"
-                  priority
-                />
-              </div>
+            <div className="md:col-span-5 flex items-end justify-center">
+              <Image
+                src="/images/cody-avatar.png"
+                alt="Illustrated portrait of Cody Wales"
+                width={600}
+                height={700}
+                className="w-full max-w-sm md:max-w-none h-auto object-contain"
+                priority
+              />
             </div>
           </div>
         </div>
