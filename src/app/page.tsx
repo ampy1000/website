@@ -84,7 +84,7 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)] bg-[#FAF7F2]">
+              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
                 <Image
                   src="/images/cody-avatar.png"
                   alt="Illustrated portrait of Cody Wales"
@@ -93,11 +93,6 @@ export default function Home() {
                   className="w-full h-[400px] md:h-[520px] object-contain"
                   priority
                 />
-              </div>
-              {/* Floating accent element */}
-              <div className="absolute -bottom-4 -left-4 bg-warm text-white rounded-2xl px-6 py-4 shadow-[var(--shadow-lg)]">
-                <p className="text-xs uppercase tracking-wider font-semibold">Currently at</p>
-                <p className="font-bold text-lg">Pfizer</p>
               </div>
             </div>
           </div>
