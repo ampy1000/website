@@ -43,8 +43,8 @@ const marqueeItems = [
   "Creative Direction",
   "Brand Strategy",
   "Consumer Insights",
-  "Drumming",
-  "Sound Healing",
+  "Storytelling",
+  "Community Building",
 ];
 
 export default function Home() {
@@ -83,22 +83,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="md:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
-                <Image
-                  src="/images/hero-workspace.jpg"
-                  alt="A modern creative workspace with design tools and technology"
-                  width={600}
-                  height={700}
-                  className="w-full h-[400px] md:h-[520px] object-cover"
-                  priority
-                />
-              </div>
-              {/* Floating accent element */}
-              <div className="absolute -bottom-4 -left-4 bg-warm text-white rounded-2xl px-6 py-4 shadow-[var(--shadow-lg)]">
-                <p className="text-xs uppercase tracking-wider font-semibold">Currently at</p>
-                <p className="font-bold text-lg">Pfizer</p>
-              </div>
+            <div className="md:col-span-5 flex items-end justify-center">
+              <Image
+                src="/images/cody-avatar.png"
+                alt="Illustrated portrait of Cody Wales"
+                width={600}
+                height={700}
+                className="w-full max-w-sm md:max-w-none h-auto object-contain"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -131,8 +124,8 @@ export default function Home() {
             <div className="md:col-span-7 flex items-end">
               <p className="text-body leading-relaxed text-lg max-w-lg">
                 The same values that shape how I design patient experiences
-                at Pfizer also show up when I{"'"}m behind a drum kit or
-                leading a sound bath. The context changes. The principles don{"'"}t.
+                at Pfizer also show up in every project I take on.
+                The context changes. The principles don{"'"}t.
               </p>
             </div>
           </div>
@@ -219,11 +212,7 @@ export default function Home() {
                 <p className="font-bold text-foreground text-lg">MBA</p>
                 <p className="text-warm font-semibold mt-1">Rollins College &ndash; Crummer Graduate School of Business</p>
               </div>
-              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
-                <p className="text-xs uppercase tracking-[0.2em] text-muted mb-2">Creative Life</p>
-                <p className="font-bold text-foreground text-lg">Musician & Sound Bath Facilitator</p>
-                <p className="text-warm font-semibold mt-1">Flying W Entertainment</p>
-              </div>
+
             </div>
           </div>
         </div>

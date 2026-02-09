@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Me | Cody Wales",
   description:
-    "The backstory on Cody Wales -- experience designer, drummer, sound bath facilitator, and the kind of person who cold-emails gear manufacturers for a friend.",
+    "The backstory on Cody Wales -- experience designer, business builder, and the kind of person who cold-emails gear manufacturers for a friend.",
 };
 
 const approaches = [
@@ -49,9 +49,9 @@ export default function AboutPage() {
               <span className="text-warm">Cody.</span>
             </h1>
             <p className="text-lg md:text-xl text-body leading-relaxed max-w-lg">
-              Experience designer, business builder, national touring drummer,
-              sound bath facilitator -- and yes, all of those things connect
-              more than you{"'"}d think.
+              Experience designer, business builder, and creative. I help
+              organizations close the gap between what they build and what
+              people actually need.
             </p>
           </div>
           <div className="md:col-span-5">
@@ -92,12 +92,9 @@ export default function AboutPage() {
                   to people who hold the budget.
                 </p>
                 <p className="text-muted">
-                  Outside of that, I{"'"}m a{" "}
-                  <span className="text-warm font-semibold">national touring musician</span>,{" "}
-                  <span className="text-warm font-semibold">sound bath facilitator</span>, and{" "}
-                  <span className="text-warm font-semibold">founder of Flying W Entertainment</span>.
-                  I love to laugh, be goofy, and I believe the best version of myself
-                  shows up when creative expression is part of the equation.
+                  Outside of work, I love to laugh, be goofy, and I believe
+                  the best version of myself shows up when creative expression
+                  is part of the equation.
                 </p>
               </div>
             </div>

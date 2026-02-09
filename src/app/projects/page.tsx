@@ -40,14 +40,7 @@ const projects = [
     tags: ["Community", "Initiative", "Problem Solving"],
     image: "/images/project-gear.jpg",
   },
-  {
-    title: "Flying W Entertainment",
-    category: "Entrepreneurship",
-    description:
-      "This is where the business side and the creative side stop pretending they're separate. I founded Flying W to bring live music, sound baths, and performance experiences to audiences. Drummer, facilitator, entrepreneur -- turns out you don't have to pick just one.",
-    tags: ["Entertainment", "Music", "Business"],
-    image: "/images/project-flying-w.jpg",
-  },
+
 ];
 
 export default function ProjectsPage() {
