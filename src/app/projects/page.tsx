@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | Cody Wales",
   description:
-    "Explore the projects and creative ventures of Cody Wales — from healthcare chapter branding to podcasting and community building.",
+    "Explore the projects and ventures of Cody Wales -- from healthcare strategy to podcasting and community building. Product thinking applied beyond the day job.",
 };
 
 const projects = [
@@ -12,24 +12,24 @@ const projects = [
     title: "ACHE Chapter Website Redesign",
     category: "Healthcare Leadership",
     description:
-      "The chapter's website wasn't doing the mission justice. I migrated and redesigned the whole thing -- and it worked well enough that they invited me onto the Board of Directors as Communications Chair. The goal from there: make the brand match the ambition of being the premier society for healthcare leaders.",
-    tags: ["Web Design", "Brand Strategy", "Healthcare"],
+      "The chapter's website wasn't serving its users or its mission. I scoped the problem, migrated the platform, and rebuilt the whole thing -- and it worked well enough that they invited me onto the Board of Directors as Communications Chair. Product thinking applied to a nonprofit: identify the gap, build the solution, measure the impact.",
+    tags: ["Product Thinking", "Strategy", "Healthcare"],
     image: "/images/project-ache.jpg",
   },
   {
     title: "Coffee with Cody",
     category: "Community & Networking",
     description:
-      "Simple premise: buy someone interesting a cup of coffee, ask them how they got to where they are, and actually listen. It started as a networking experiment and turned into one of the most valuable things I do -- real conversations with people across business, arts, and life.",
-    tags: ["Community Building", "Networking", "Storytelling"],
+      "Simple premise: buy someone interesting a cup of coffee, ask them how they got to where they are, and actually listen. It started as a networking experiment and turned into one of the most valuable things I do -- real conversations with people across product, business, and life. The best consumer insights don't come from a survey.",
+    tags: ["Community Building", "Networking", "Insights"],
     image: "/images/project-coffee.jpg",
   },
   {
     title: "The Produced Podcast",
     category: "Creative Media",
     description:
-      "This one came out of building a creative business with Joshua Martin Studios. We figured if we were learning this much, other people might want to hear it too. The show is part behind-the-scenes, part conversation with other creatives navigating the space where business meets art.",
-    tags: ["Podcasting", "Creative Business", "Media"],
+      "This one came out of building a business with Joshua Martin Studios. We figured if we were learning this much, other people might want to hear it too. The show is part behind-the-scenes, part conversation with other builders navigating the space where strategy meets execution.",
+    tags: ["Podcasting", "Business", "Media"],
     image: "/images/project-podcast.jpg",
   },
   {
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
           <span className="text-warm">Built.</span>
         </h1>
         <p className="text-lg md:text-xl text-body leading-relaxed max-w-xl">
-          Some of these started with a strategy deck. Others started with a cold email
+          Some of these started with a product brief. Others started with a cold email
           or a cup of coffee. All of them taught me something I couldn{"'"}t have learned
           any other way.
         </p>

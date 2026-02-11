@@ -5,35 +5,35 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Origin Story | Cody Wales",
   description:
-    "The origin story of Cody Wales -- experience designer, business builder, and creative. Told like the comic book it deserves to be.",
+    "The origin story of Cody Wales -- from patient experience to product strategy. How a background in healthcare, service design, and innovation shaped a product strategist.",
 };
 
 /* ── chapter data ── */
 
 const powers = [
   {
-    title: "Start With the Person",
-    text: "Not the product, not the roadmap, not the quarterly target. The person. Everything else follows from actually understanding what someone needs.",
+    title: "Start With the User",
+    text: "Not the feature list, not the roadmap, not the quarterly target. The user. Everything else follows from actually understanding what someone needs.",
   },
   {
     title: "Map It Before You Build It",
-    text: "Journey maps and service blueprints aren't just workshop artifacts. They're how you catch the gaps between what you think the experience is and what it actually is.",
+    text: "Journey maps and service blueprints aren't just workshop artifacts. They're how you catch the gaps between what you think the product does and what it actually does.",
   },
   {
     title: "Work Across the Lines",
-    text: "The best ideas die in silos. I work with clinical teams, product teams, marketers, and executives -- because the real breakthroughs live at the intersections.",
+    text: "The best products die in silos. I work with engineering, clinical teams, marketers, and executives -- because the real breakthroughs live at the intersections.",
   },
   {
     title: "Find the Unmet Need",
-    text: "People will tell you what they want. The job is figuring out what they need but can't articulate yet. That's where the most meaningful innovation happens.",
+    text: "Users will tell you what they want. The job is figuring out what they need but can't articulate yet. That's where the most meaningful product decisions happen.",
   },
   {
     title: "Empathy + Evidence",
-    text: "Empathy gets you close to the truth. Research gets you the rest of the way. Good design does both -- it feels right and holds up under scrutiny.",
+    text: "Empathy gets you close to the truth. Research gets you the rest of the way. Good product strategy does both -- it feels right and holds up under scrutiny.",
   },
   {
     title: "Close the Gap",
-    text: "A great strategy that patients never feel is just a PowerPoint. I focus on the connective tissue between what we plan and what people actually encounter.",
+    text: "A great strategy that users never feel is just a PowerPoint. I focus on the connective tissue between what we plan and what people actually experience.",
   },
 ];
 
@@ -66,14 +66,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7 relative z-10">
               <div className="caption-box rounded-md mb-8 w-fit">
-                Every designer has a beginning&hellip;
+                Every strategist has a beginning&hellip;
               </div>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-background leading-[0.92] tracking-tight mb-6">
                 Origin<br />
                 <span className="text-warm">Story.</span>
               </h1>
               <p className="text-background/60 text-lg md:text-xl leading-relaxed max-w-md">
-                Experience designer, business builder, and creative &mdash;
+                From patient experience to product strategy &mdash;
                 this is how I got here.
               </p>
             </div>
@@ -171,13 +171,13 @@ export default function AboutPage() {
           <div className="comic-panel rounded-2xl bg-background p-8 md:p-12 mb-4">
             <div className="max-w-3xl">
               <p className="text-2xl md:text-3xl font-black text-foreground leading-snug mb-4">
-                Pre-med &rarr; CX &amp; Service Design
+                Pre-med &rarr; CX &rarr; Product Strategy
               </p>
               <p className="text-body text-lg leading-relaxed">
-                That realization pulled me toward CX and service design, where the
-                work is figuring out the gap between what an organization
-                <em> thinks</em> it delivers and what a person <em>actually</em>{" "}
-                experiences.
+                That realization pulled me toward patient experience and service
+                design, then into product strategy -- where the work is figuring
+                out the gap between what an organization <em>thinks</em> it
+                delivers and what a person <em>actually</em> needs.
               </p>
             </div>
           </div>
@@ -191,12 +191,12 @@ export default function AboutPage() {
                   &darr;
                 </span>
                 <p className="text-background font-bold text-lg mb-2">
-                  Mapping journeys.
+                  Understanding the problem.
                 </p>
                 <p className="text-background/60 leading-relaxed">
                   I{"'"}ve spent years mapping the real paths people take through
-                  healthcare &mdash; the waits, the handoffs, the moments that
-                  matter most.
+                  healthcare &mdash; the friction, the handoffs, the moments
+                  where a better product could change everything.
                 </p>
               </div>
             </div>
@@ -207,11 +207,12 @@ export default function AboutPage() {
                   &uarr;
                 </span>
                 <p className="text-background font-bold text-lg mb-2">
-                  Making the case.
+                  Building the case.
                 </p>
                 <p className="text-background/60 leading-relaxed">
-                  Blueprinting services and making a compelling case for why all of
-                  it matters to the people who hold the budget.
+                  Translating insights into product strategy and making a
+                  compelling case for why all of it matters to the people
+                  who hold the budget.
                 </p>
               </div>
             </div>
@@ -290,7 +291,7 @@ export default function AboutPage() {
           <ChapterBadge num="04" label="The Arsenal" />
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-black text-background leading-tight">
-              Every hero needs a toolkit.
+              Every strategist needs a toolkit.
             </h2>
           </div>
 
