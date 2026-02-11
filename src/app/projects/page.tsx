@@ -71,6 +71,7 @@ export default function ProjectsPage() {
                 src={projects[0].image}
                 alt={projects[0].title}
                 fill
+                sizes="(max-width: 768px) 100vw, 58vw"
                 className="object-cover"
                 priority
               />
@@ -114,6 +115,7 @@ export default function ProjectsPage() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors" />
