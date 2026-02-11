@@ -5,19 +5,19 @@ const values = [
   {
     title: "Exploration",
     description:
-      "The best ideas don't come from the same four walls. I'm constantly pulling from unfamiliar places -- new industries, new people, new problems -- because that's where the interesting stuff lives.",
+      "The best product ideas don't come from the same four walls. I pull from unfamiliar places -- new industries, new users, new problem spaces -- because that's where the interesting stuff lives.",
     number: "01",
   },
   {
     title: "Growth",
     description:
-      "Comfortable and growing are rarely the same thing. I'd rather be the person who tried a better way and learned something than the one who stuck with 'how we've always done it.'",
+      "Comfortable and growing are rarely the same thing. I'd rather be the person who shipped a better version and learned something than the one who stuck with 'how we've always done it.'",
     number: "02",
   },
   {
     title: "Intention",
     description:
-      "Busy isn't the same as productive. Every project, every conversation, every commitment should earn its place -- if it doesn't serve a purpose, it's just noise.",
+      "Busy isn't the same as productive. Every feature, every initiative, every commitment should earn its place -- if it doesn't solve a real problem, it's just noise.",
     number: "03",
   },
   {
@@ -29,22 +29,22 @@ const values = [
   {
     title: "Boldness",
     description:
-      "Conventional wisdom is comfortable, not correct. The willingness to challenge what everyone accepts as true -- that's where real innovation starts.",
+      "Conventional wisdom is comfortable, not correct. The willingness to challenge what everyone accepts as true -- that's where real product breakthroughs start.",
     number: "05",
   },
 ];
 
 const marqueeItems = [
-  "Experience Design",
+  "Product Strategy",
+  "Product Management",
   "Innovation Strategy",
-  "Human-Centered Design",
-  "Service Blueprinting",
-  "Journey Mapping",
-  "Creative Direction",
-  "Brand Strategy",
   "Consumer Insights",
-  "Storytelling",
-  "Community Building",
+  "Go-to-Market",
+  "Roadmap Planning",
+  "Cross-Functional Leadership",
+  "Service Design",
+  "Journey Mapping",
+  "Stakeholder Alignment",
 ];
 
 export default function Home() {
@@ -56,17 +56,17 @@ export default function Home() {
           <div className="grid md:grid-cols-12 gap-8 items-end">
             <div className="md:col-span-7">
               <p className="text-warm font-semibold text-sm tracking-wide mb-6">
-                Experience Designer / Business Builder / Creative
+                Product Strategist / Innovation Leader
               </p>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
-                I design<br />
-                how things<br />
-                <span className="text-warm">feel.</span>
+                I build<br />
+                what people<br />
+                <span className="text-warm">actually need.</span>
               </h1>
               <p className="text-body leading-relaxed max-w-md text-lg mb-10">
-                Most companies know what they build. Fewer understand how people
-                actually experience it. That{"'"}s where I come in -- turning
-                real consumer insights into strategy that moves the needle.
+                Most companies know what they build. Fewer understand whether
+                it solves the right problem. That{"'"}s where I come in -- turning
+                consumer insights into product strategy that moves the needle.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -123,8 +123,8 @@ export default function Home() {
             </div>
             <div className="md:col-span-7 flex items-end">
               <p className="text-body leading-relaxed text-lg max-w-lg">
-                The same values that shape how I design patient experiences
-                at Pfizer also show up in every project I take on.
+                The same values that shape how I drive product strategy
+                at Pfizer show up in every initiative I take on.
                 The context changes. The principles don{"'"}t.
               </p>
             </div>
@@ -180,14 +180,14 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-body leading-relaxed text-lg">
                 <p>
-                  I{"'"}m a CX and service design strategist who{"'"}s spent years
-                  figuring out the gap between what organizations build and what
-                  people actually need. The work is part research, part design,
+                  I{"'"}m a product strategist who{"'"}s spent years figuring out
+                  the gap between what organizations build and what people
+                  actually need. The work is part research, part product thinking,
                   part making a compelling case for why any of it matters.
                 </p>
                 <p className="text-muted">
-                  When it clicks -- when the insight leads to a strategy that leads
-                  to something a patient or provider can feel -- that{"'"}s the
+                  When it clicks -- when the insight leads to a strategy that
+                  leads to a product people can actually feel -- that{"'"}s the
                   part I live for.
                 </p>
               </div>

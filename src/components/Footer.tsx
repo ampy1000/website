@@ -10,8 +10,7 @@ export default function Footer() {
               Cody<span className="text-warm">.</span>
             </h3>
             <p className="text-muted leading-relaxed max-w-xs mb-6">
-              Designing how things feel. Building what matters.
-              Making the case for both.
+              Building what people actually need. Making the case for why it matters.
             </p>
             <div className="flex gap-4">
               <a

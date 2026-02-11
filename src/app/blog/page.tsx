@@ -7,7 +7,7 @@ import CategoryFilter from "./CategoryFilter";
 export const metadata: Metadata = {
   title: "Blog | Cody Wales",
   description:
-    "Thoughts on experience design, innovation strategy, healthcare, and the messy middle between business and creativity.",
+    "Thoughts on product strategy, innovation, healthcare, and the messy middle between building things and building the right things.",
 };
 
 export default function BlogPage() {
@@ -32,7 +32,7 @@ export default function BlogPage() {
               Out <span className="text-warm">Loud.</span>
             </h1>
             <p className="text-lg md:text-xl text-body leading-relaxed max-w-xl">
-              Notes on experience design, innovation strategy, and everything
+              Notes on product strategy, innovation, and everything
               in between. Some of this is polished. Some of it{"'"}s just me
               working through an idea in public.
             </p>
@@ -40,8 +40,8 @@ export default function BlogPage() {
           <div className="md:col-span-5 flex items-end">
             <p className="text-muted leading-relaxed max-w-sm">
               I write about the things I{"'"}m learning, building, and
-              questioning -- mostly at the intersection of business, design,
-              and what it means to actually serve people well.
+              questioning -- mostly at the intersection of product, strategy,
+              and what it means to actually build the right thing.
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Experience | Cody Wales",
   description:
-    "The full career timeline -- from managing a rec center budget to global innovation strategy at Pfizer. Every role taught something the last one couldn't.",
+    "The full career timeline -- from patient experience to customer experience to product strategy and innovation at Pfizer. Every role taught something the last one couldn't.",
 };
 
 const experiences = [
@@ -13,9 +13,9 @@ const experiences = [
     period: "Jun 2024 - Present",
     type: "current",
     description: [
-      "Every healthcare innovation begins with purpose. Our team leads the discovery, assessment, and development of solutions that transform patient care.",
-      "My role focuses on orchestrating the collaboration between design and product teams -- making sure our innovations directly improve the healthcare experience as we guide concepts from ideation through to real-world solutions.",
-      "Human-centered approaches aren't a phase of the project here. They're the foundation.",
+      "Leading discovery, assessment, and development of product solutions that transform patient care. The work starts with identifying real unmet needs and ends with something people can actually use.",
+      "My role is product strategy in practice -- orchestrating collaboration between product, engineering, and commercial teams to guide concepts from insight through ideation to real-world delivery.",
+      "User-centered thinking isn't a phase of the project here. It's the foundation for every product decision we make.",
     ],
   },
   {
@@ -24,9 +24,9 @@ const experiences = [
     period: "Mar 2022 - Jun 2024",
     type: "past",
     description: [
-      "Healthcare is a complex ecosystem. My role was to bring humans to the center of it -- whether that meant patients, providers, or colleagues.",
-      "Journey mapping, service blueprinting, and other service design tools weren't just workshop artifacts. They were how we provided strategic insights that shaped what the business actually built.",
-      "That customer-first mindset enabled breakthrough products and experiences across Pfizer's global footprint.",
+      "Healthcare is a complex ecosystem. My role was to bring the user to the center of product and strategy decisions -- whether that meant patients, providers, or internal stakeholders.",
+      "Journey mapping, service blueprinting, and user research weren't just workshop artifacts. They were how we generated the strategic insights that shaped what the business actually built and prioritized.",
+      "That user-first approach directly influenced product roadmaps and enabled breakthrough outcomes across Pfizer's global footprint.",
     ],
   },
   {
@@ -35,9 +35,9 @@ const experiences = [
     period: "Dec 2020 - Mar 2022",
     type: "past",
     description: [
-      "Deeply understanding the health system ecosystem and designing experiences that support more meaningful patient and team member outcomes.",
-      "Analyzed millions of patient comments to uncover actionable insights. Provided guidance on physical design for innovative care models. Delivered C-suite briefings that told the story of patients and team members in a way the numbers alone couldn't.",
-      "For a significant portion of this role, efforts were redirected to support critical COVID-19 response -- virtual visit options for families and vaccine distribution. Some work matters more than a roadmap.",
+      "Owned the consumer insights function for one of the largest health systems in the country -- translating what patients and team members actually experienced into strategy leadership could act on.",
+      "Analyzed millions of patient comments to surface actionable insights. Informed product and service decisions for innovative care models. Delivered C-suite briefings that told the story behind the data in a way the numbers alone couldn't.",
+      "For a significant portion of this role, efforts pivoted to support critical COVID-19 response -- virtual visit products for families and vaccine distribution logistics. Some work matters more than a roadmap.",
     ],
   },
   {
@@ -46,9 +46,9 @@ const experiences = [
     period: "Nov 2018 - Dec 2020",
     type: "past",
     description: [
-      "Supported the deployment of a unified set of service standards and cultural training program for 60,000 team members nationwide. That's not a typo -- sixty thousand.",
-      "Partnered with physicians to coordinate a physician-to-physician communication program that bridged gaps the org chart couldn't.",
-      "The highlight: designing and executing the personalized experience for each cancer survivor and their family in the 'Survivor Bell Choir' commercial. I'm still in contact with most of them.",
+      "Managed the rollout of a unified set of service standards and cultural training program for 60,000 team members nationwide. That's not a typo -- sixty thousand. Product management at scale, even if nobody called it that.",
+      "Partnered with physicians to build and coordinate a physician-to-physician communication program that bridged gaps the org chart couldn't.",
+      "The highlight: producing the personalized experience for each cancer survivor and their family in the 'Survivor Bell Choir' commercial. I'm still in contact with most of them.",
     ],
   },
   {
@@ -68,8 +68,8 @@ const experiences = [
     period: "May 2017 - Sep 2021",
     type: "past",
     description: [
-      "A small production agency focused on sharing stories of the human condition. We worked with a diverse group of clientele -- from design agencies to international celebrity influencers.",
-      "Part creative partner, part strategic lead. The kind of role where you wear every hat and learn something from each one.",
+      "A small production agency focused on sharing stories of the human condition. We worked with a diverse group of clientele -- from agencies to international celebrity influencers.",
+      "Part product owner, part strategic lead. Managed the full lifecycle from client discovery through delivery -- scoping, prioritizing, and shipping work that had to earn its keep.",
     ],
   },
   {
@@ -128,22 +128,22 @@ const education = [
 ];
 
 const skills = [
-  "Customer Experience (CX)",
+  "Product Strategy",
+  "Product Management",
+  "Innovation Strategy",
+  "Consumer Insights",
+  "Go-to-Market Strategy",
+  "Roadmap Planning",
+  "Cross-Functional Leadership",
   "Service Design",
   "Journey Mapping",
   "Service Blueprinting",
-  "Innovation Strategy",
-  "Consumer Insights",
-  "Product Strategy",
-  "Product Management",
-  "Human-Centered Design",
-  "Cross-Functional Collaboration",
-  "Go-to-Market Strategy",
+  "User Research",
+  "Customer Experience (CX)",
   "Healthcare",
-  "Enrollment Management",
+  "Stakeholder Alignment",
   "Project Management",
-  "Stakeholder Management",
-  "Brand Strategy",
+  "Strategic Communication",
 ];
 
 export default function ExperiencePage() {
@@ -163,10 +163,10 @@ export default function ExperiencePage() {
           </div>
           <div className="md:col-span-5 pb-4">
             <p className="text-lg text-body leading-relaxed">
-              From managing a rec center and publishing a student budget to
-              global innovation strategy at one of the world{"'"}s largest
-              pharmaceutical companies. The through-line: I{"'"}m drawn to work
-              where understanding people is the whole job.
+              From patient experience to customer experience to service
+              design to innovation and product strategy at one of the world{"'"}s
+              largest pharmaceutical companies. The through-line: I{"'"}m drawn to
+              work where understanding people is how you build the right thing.
             </p>
           </div>
         </div>
