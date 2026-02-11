@@ -35,6 +35,7 @@ export default function Footer() {
               <li><Link href="/about" className="text-muted hover:text-warm transition-colors link-draw">About</Link></li>
               <li><Link href="/experience" className="text-muted hover:text-warm transition-colors link-draw">Experience</Link></li>
               <li><Link href="/projects" className="text-muted hover:text-warm transition-colors link-draw">Projects</Link></li>
+              <li><Link href="/blog" className="text-muted hover:text-warm transition-colors link-draw">Blog</Link></li>
             </ul>
           </div>
           <div className="md:col-span-2">
