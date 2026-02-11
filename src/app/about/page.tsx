@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Me | Cody Wales",
+  title: "Origin Story | Cody Wales",
   description:
-    "The backstory on Cody Wales -- experience designer, business builder, and the kind of person who cold-emails gear manufacturers for a friend.",
+    "The origin story of Cody Wales -- experience designer, business builder, and creative. Told like the comic book it deserves to be.",
 };
 
-const approaches = [
+/* ── chapter data ── */
+
+const powers = [
   {
     title: "Start With the Person",
-    text: "Not the product, not the roadmap, not the quarterly target. The person. Everything else follows from actually understanding what someone needs -- and what's getting in the way.",
+    text: "Not the product, not the roadmap, not the quarterly target. The person. Everything else follows from actually understanding what someone needs.",
   },
   {
     title: "Map It Before You Build It",
@@ -18,105 +21,75 @@ const approaches = [
   },
   {
     title: "Work Across the Lines",
-    text: "The best ideas die in silos. I work with clinical teams, product teams, marketers, and executives -- not because it's efficient, but because the real breakthroughs live at the intersections.",
+    text: "The best ideas die in silos. I work with clinical teams, product teams, marketers, and executives -- because the real breakthroughs live at the intersections.",
   },
   {
     title: "Find the Unmet Need",
     text: "People will tell you what they want. The job is figuring out what they need but can't articulate yet. That's where the most meaningful innovation happens.",
   },
   {
-    title: "Design With Empathy, Decide With Evidence",
+    title: "Empathy + Evidence",
     text: "Empathy gets you close to the truth. Research gets you the rest of the way. Good design does both -- it feels right and holds up under scrutiny.",
   },
   {
-    title: "Close the Gap Between Strategy and Experience",
+    title: "Close the Gap",
     text: "A great strategy that patients never feel is just a PowerPoint. I focus on the connective tissue between what we plan and what people actually encounter.",
   },
 ];
 
+/* ── helpers ── */
+
+function ChapterBadge({ num, label }: { num: string; label: string }) {
+  return (
+    <div className="flex items-center gap-3 mb-6">
+      <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-foreground text-background text-xs font-bold">
+        {num}
+      </span>
+      <span className="text-xs font-bold uppercase tracking-[0.18em] text-muted">
+        {label}
+      </span>
+    </div>
+  );
+}
+
+/* ── page ── */
+
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-8 md:pt-32 md:pb-16">
-        <div className="grid md:grid-cols-12 gap-12 items-end">
-          <div className="md:col-span-7">
-            <p className="text-warm font-semibold text-sm tracking-wide mb-6">
-              About Me
-            </p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
-              Hey, I{"'"}m<br />
-              <span className="text-warm">Cody.</span>
-            </h1>
-            <p className="text-lg md:text-xl text-body leading-relaxed max-w-lg">
-              Experience designer, business builder, and creative. I help
-              organizations close the gap between what they build and what
-              people actually need.
-            </p>
-          </div>
-          <div className="md:col-span-5">
-            <div className="rounded-3xl overflow-hidden hover-zoom shadow-[var(--shadow-lg)]">
-              <Image
-                src="/images/about-creative.jpg"
-                alt="Creative workspace with drumsticks and design sketches"
-                width={600}
-                height={500}
-                className="w-full h-[380px] object-cover"
-                priority
-              />
+      {/* ============================================
+          SPLASH PANEL — full-width title card
+          ============================================ */}
+      <section className="relative overflow-hidden bg-foreground">
+        <div className="absolute inset-0 action-lines opacity-60" />
+        <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-36 md:pb-24">
+          <div className="grid md:grid-cols-12 gap-10 items-end">
+            <div className="md:col-span-7 relative z-10">
+              <div className="caption-box rounded-md mb-8 w-fit">
+                Every designer has a beginning&hellip;
+              </div>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-background leading-[0.92] tracking-tight mb-6">
+                Origin<br />
+                <span className="text-warm">Story.</span>
+              </h1>
+              <p className="text-background/60 text-lg md:text-xl leading-relaxed max-w-md">
+                Experience designer, business builder, and creative &mdash;
+                this is how I got here.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Story Section - editorial split */}
-      <section className="border-t border-border">
-        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
-          <div className="grid md:grid-cols-12 gap-14">
-            <div className="md:col-span-7">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-8">How I Got Here</h2>
-              <div className="space-y-5 text-body leading-relaxed text-lg">
-                <p>
-                  It started with a snowmobile accident -- not mine, a close friend{"'"}s.
-                  Watching the difference that whole-person care made in his recovery
-                  rewired how I thought about healthcare. I went in planning to be pre-med.
-                  I came out understanding that{" "}
-                  <span className="text-foreground font-semibold">connecting with people is the point, not just treating them.</span>
-                </p>
-                <p>
-                  That realization eventually pulled me toward CX and service design,
-                  where the work is figuring out the gap between what an organization
-                  thinks it delivers and what a person actually experiences. I{"'"}ve
-                  spent years doing that work in healthcare -- mapping journeys,
-                  blueprinting services, and making the case for why all of it matters
-                  to people who hold the budget.
-                </p>
-                <p className="text-muted">
-                  Outside of work, I love to laugh, be goofy, and I believe
-                  the best version of myself shows up when creative expression
-                  is part of the equation.
-                </p>
-              </div>
-            </div>
-            <div className="md:col-span-5 space-y-6">
-              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
-                <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Education</h3>
-                <div className="space-y-5">
-                  <div>
-                    <p className="font-bold text-foreground">Master of Business Administration</p>
-                    <p className="text-warm font-semibold text-sm mt-1">Rollins College &ndash; Crummer Graduate School of Business</p>
-                  </div>
-                  <div className="border-t border-border pt-5">
-                    <p className="font-bold text-foreground">Bachelor of Business Administration</p>
-                    <p className="text-warm font-semibold text-sm mt-1">Andrews University</p>
-                  </div>
-                </div>
-              </div>
-              <div className="rounded-2xl border border-border p-8 bg-background hover:shadow-[var(--shadow-md)] transition-shadow">
-                <h3 className="text-xs uppercase tracking-[0.2em] text-muted mb-5">Recognition</h3>
-                <div>
-                  <p className="font-bold text-foreground">ACHE of Central Florida Regent{"'"}s Award</p>
-                  <p className="text-warm font-semibold text-sm mt-1">American College of Healthcare Executives</p>
+            {/* Character portrait panel */}
+            <div className="md:col-span-5 flex justify-center md:justify-end">
+              <div className="comic-panel rounded-2xl bg-warm-light w-full max-w-xs">
+                <div className="halftone-warm">
+                  <Image
+                    src="/images/cody-avatar.png"
+                    alt="Illustrated portrait of Cody Wales"
+                    width={400}
+                    height={480}
+                    className="w-full h-auto object-contain relative z-10"
+                    priority
+                  />
                 </div>
               </div>
             </div>
@@ -124,51 +97,298 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Approach Section - numbered grid */}
-      <section className="bg-foreground">
-        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
-          <div className="mb-16">
-            <p className="text-warm font-semibold text-sm tracking-wide mb-4">
-              Methodology
-            </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-background leading-tight">My Approach</h2>
+      {/* ============================================
+          CHAPTER 1 — The Inciting Incident
+          ============================================ */}
+      <section className="border-t-4 border-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <ChapterBadge num="01" label="The Inciting Incident" />
+
+          <div className="grid md:grid-cols-12 comic-grid">
+            {/* Big scene panel */}
+            <div className="md:col-span-7 comic-panel rounded-2xl overflow-hidden">
+              <div className="relative">
+                <Image
+                  src="/images/about-creative.jpg"
+                  alt="Creative workspace — drumsticks and design sketches"
+                  width={700}
+                  height={460}
+                  className="w-full h-[320px] md:h-[400px] object-cover"
+                />
+                {/* Overlay narration caption */}
+                <div className="absolute top-4 left-4 right-4 md:right-auto md:max-w-xs">
+                  <div className="caption-box rounded-md text-sm leading-snug">
+                    It started with a snowmobile accident&nbsp;&mdash; not mine, a close
+                    friend{"'"}s.
+                  </div>
+                </div>
+                <div className="absolute bottom-4 right-4 md:max-w-[260px]">
+                  <div className="caption-box rounded-md text-sm leading-snug bg-foreground/90">
+                    Watching the difference that whole-person care made in his recovery
+                    rewired how I thought about healthcare.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stacked reaction panels */}
+            <div className="md:col-span-5 flex flex-col comic-grid">
+              {/* Reaction panel 1 */}
+              <div className="comic-panel rounded-2xl bg-surface-alt p-6 md:p-8 flex-1 flex flex-col justify-center halftone">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-muted mb-3">
+                  The Plan
+                </p>
+                <p className="text-foreground text-lg font-bold leading-snug">
+                  I went in planning to be pre-med.
+                </p>
+              </div>
+
+              {/* Reaction panel 2 — speech bubble */}
+              <div className="comic-panel rounded-2xl bg-background p-6 md:p-8 flex-1 flex flex-col justify-center">
+                <div className="speech-bubble">
+                  <p className="text-foreground font-bold text-lg md:text-xl leading-snug">
+                    &ldquo;Connecting with people is the point &mdash;
+                    not just treating them.&rdquo;
+                  </p>
+                </div>
+                <p className="text-muted text-sm mt-6 pl-1">
+                  &uarr; The moment everything changed.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-background/10 rounded-3xl overflow-hidden">
-            {approaches.map((item, i) => (
-              <div key={item.title} className="bg-foreground p-8 md:p-10 group hover:bg-foreground/80 transition-colors">
-                <span className="text-4xl font-extrabold text-background/10 group-hover:text-warm/30 transition-colors leading-none">
+        </div>
+      </section>
+
+      {/* ============================================
+          CHAPTER 2 — The Transformation
+          ============================================ */}
+      <section className="border-t-4 border-foreground bg-surface-alt">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <ChapterBadge num="02" label="The Transformation" />
+
+          {/* Wide narrative panel */}
+          <div className="comic-panel rounded-2xl bg-background p-8 md:p-12 mb-4">
+            <div className="max-w-3xl">
+              <p className="text-2xl md:text-3xl font-black text-foreground leading-snug mb-4">
+                Pre-med &rarr; CX &amp; Service Design
+              </p>
+              <p className="text-body text-lg leading-relaxed">
+                That realization pulled me toward CX and service design, where the
+                work is figuring out the gap between what an organization
+                <em> thinks</em> it delivers and what a person <em>actually</em>{" "}
+                experiences.
+              </p>
+            </div>
+          </div>
+
+          {/* Two-panel row */}
+          <div className="grid md:grid-cols-2 comic-grid">
+            <div className="comic-panel rounded-2xl bg-foreground p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute inset-0 action-lines opacity-40" />
+              <div className="relative z-10">
+                <span className="text-5xl md:text-6xl font-black text-warm/20 leading-none block mb-3">
+                  &darr;
+                </span>
+                <p className="text-background font-bold text-lg mb-2">
+                  Mapping journeys.
+                </p>
+                <p className="text-background/60 leading-relaxed">
+                  I{"'"}ve spent years mapping the real paths people take through
+                  healthcare &mdash; the waits, the handoffs, the moments that
+                  matter most.
+                </p>
+              </div>
+            </div>
+            <div className="comic-panel rounded-2xl bg-foreground p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute inset-0 action-lines opacity-40" />
+              <div className="relative z-10">
+                <span className="text-5xl md:text-6xl font-black text-warm/20 leading-none block mb-3">
+                  &uarr;
+                </span>
+                <p className="text-background font-bold text-lg mb-2">
+                  Making the case.
+                </p>
+                <p className="text-background/60 leading-relaxed">
+                  Blueprinting services and making a compelling case for why all of
+                  it matters to the people who hold the budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          CHAPTER 3 — The Training Arc
+          ============================================ */}
+      <section className="border-t-4 border-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <ChapterBadge num="03" label="The Training Arc" />
+
+          <div className="grid md:grid-cols-3 comic-grid">
+            {/* Education panel 1 */}
+            <div className="comic-panel rounded-2xl bg-warm p-8 md:p-10 text-white relative overflow-hidden">
+              <div className="absolute top-3 right-4 text-7xl font-black text-white/10 leading-none select-none">
+                MBA
+              </div>
+              <div className="relative z-10">
+                <span className="caption-box rounded-md bg-white/20 text-white text-xs mb-6 inline-block">
+                  Power-Up Unlocked
+                </span>
+                <p className="font-bold text-xl mb-2">
+                  Master of Business Administration
+                </p>
+                <p className="text-white/80 text-sm font-semibold">
+                  Rollins College &ndash; Crummer Graduate School of Business
+                </p>
+              </div>
+            </div>
+
+            {/* Education panel 2 */}
+            <div className="comic-panel rounded-2xl bg-background p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute top-3 right-4 text-7xl font-black text-border leading-none select-none">
+                BBA
+              </div>
+              <div className="relative z-10">
+                <span className="caption-box rounded-md text-xs mb-6 inline-block">
+                  Power-Up Unlocked
+                </span>
+                <p className="font-bold text-xl text-foreground mb-2">
+                  Bachelor of Business Administration
+                </p>
+                <p className="text-warm font-semibold text-sm">
+                  Andrews University
+                </p>
+              </div>
+            </div>
+
+            {/* Recognition panel */}
+            <div className="comic-panel rounded-2xl bg-foreground p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute inset-0 halftone opacity-5" />
+              <div className="relative z-10">
+                <span className="inline-block mb-6 px-3 py-1.5 rounded-md bg-warm/20 text-warm text-xs font-bold uppercase tracking-wider">
+                  Achievement
+                </span>
+                <p className="font-bold text-xl text-background mb-2">
+                  ACHE of Central Florida Regent{"'"}s Award
+                </p>
+                <p className="text-background/60 text-sm font-semibold">
+                  American College of Healthcare Executives
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          CHAPTER 4 — The Arsenal
+          ============================================ */}
+      <section className="border-t-4 border-foreground bg-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <ChapterBadge num="04" label="The Arsenal" />
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-background leading-tight">
+              Every hero needs a toolkit.
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 comic-grid">
+            {powers.map((power, i) => (
+              <div
+                key={power.title}
+                className="comic-panel comic-panel-sm rounded-xl bg-foreground border-background/20 p-7 md:p-8 group hover:border-warm transition-colors relative"
+              >
+                <span className="absolute top-4 right-5 text-4xl font-black text-background/8 group-hover:text-warm/20 transition-colors leading-none select-none">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="font-bold text-background mt-4 mb-3 group-hover:text-warm transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-background/60 leading-relaxed">{item.text}</p>
+                <div className="relative z-10">
+                  <h3 className="font-bold text-background mb-3 group-hover:text-warm transition-colors text-lg">
+                    {power.title}
+                  </h3>
+                  <p className="text-sm text-background/50 leading-relaxed">
+                    {power.text}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Key Beliefs */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-warm font-semibold text-sm tracking-wide mb-4">
-            Philosophy
+      {/* ============================================
+          CHAPTER 5 — The Code
+          ============================================ */}
+      <section className="border-t-4 border-foreground">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <ChapterBadge num="05" label="The Code" />
+          <p className="text-muted text-lg mb-10 max-w-lg">
+            Every origin story has its guiding principles.
+            These are the ones I come back to.
           </p>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-12">Key Beliefs</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <blockquote className="border-l-4 border-warm rounded-r-2xl bg-warm-light px-8 py-8">
-              <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
-                &ldquo;You can accomplish so much more with a diverse group than you
-                can alone. Build the network before you need it.&rdquo;
+
+          <div className="grid md:grid-cols-2 comic-grid">
+            <div className="thought-bubble">
+              <p className="text-foreground text-lg md:text-xl font-bold leading-snug">
+                &ldquo;You can accomplish so much more with a diverse group than
+                you can alone. Build the network before you need it.&rdquo;
               </p>
-            </blockquote>
-            <blockquote className="border-l-4 border-warm rounded-r-2xl bg-warm-light px-8 py-8">
-              <p className="text-foreground leading-relaxed text-lg md:text-xl font-medium">
-                &ldquo;Feedback is a gift. The sooner you{"'"}re willing to hear it,
-                the better the work gets. Every single time.&rdquo;
+            </div>
+            <div className="thought-bubble">
+              <p className="text-foreground text-lg md:text-xl font-bold leading-snug">
+                &ldquo;Feedback is a gift. The sooner you{"'"}re willing to hear
+                it, the better the work gets. Every single time.&rdquo;
               </p>
-            </blockquote>
+            </div>
+          </div>
+
+          {/* Small character note */}
+          <div className="comic-panel rounded-2xl bg-surface-alt mt-4 p-8 md:p-10">
+            <p className="text-body text-lg leading-relaxed max-w-2xl">
+              Outside of work, I love to laugh, be goofy, and I believe the best
+              version of myself shows up when creative expression is part of the
+              equation.
+            </p>
+            <p className="text-muted text-sm mt-4 font-semibold">
+              &mdash; The human behind the panels
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          CLOSING PANEL — To Be Continued…
+          ============================================ */}
+      <section className="border-t-4 border-foreground bg-foreground relative overflow-hidden">
+        <div className="absolute inset-0 action-lines opacity-40" />
+        <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-8">
+              <div className="caption-box rounded-md mb-6 w-fit">
+                To be continued&hellip;
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-background leading-tight">
+                Every good story needs<br />
+                <span className="text-warm">a next chapter.</span>
+              </h2>
+            </div>
+            <div className="md:col-span-4 flex md:justify-end gap-4 flex-wrap">
+              <a
+                href="https://www.linkedin.com/in/codywales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-3.5 rounded-full bg-warm text-white text-xs uppercase tracking-[0.15em] font-semibold hover:bg-warm-deep transition-colors"
+              >
+                Connect on LinkedIn
+              </a>
+              <Link
+                href="/projects"
+                className="inline-flex items-center px-8 py-3.5 rounded-full border-2 border-background/30 text-background text-xs uppercase tracking-[0.15em] font-semibold hover:border-warm hover:text-warm transition-colors"
+              >
+                View Projects
+              </Link>
+            </div>
           </div>
         </div>
       </section>
