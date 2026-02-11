@@ -63,6 +63,7 @@ export default function BlogPage() {
                 src={featured.image}
                 alt={featured.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 58vw"
                 className="object-cover"
                 priority
               />
@@ -119,6 +120,7 @@ export default function BlogPage() {
                     src={post.image}
                     alt={post.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors" />
