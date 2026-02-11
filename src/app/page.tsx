@@ -59,9 +59,9 @@ export default function Home() {
                 Product Strategist / Innovation Leader
               </p>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.95] tracking-tight mb-8">
-                I build<br />
-                what people<br />
-                <span className="text-warm">actually need.</span>
+                I build what<br />
+                people <span className="text-warm">actually</span><br />
+                <span className="text-warm">need.</span>
               </h1>
               <p className="text-body leading-relaxed max-w-md text-lg mb-10">
                 Most companies know what they build. Fewer understand whether
