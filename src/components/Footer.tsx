@@ -34,6 +34,8 @@ export default function Footer() {
               <li><Link href="/about" className="text-muted hover:text-warm transition-colors link-draw">About</Link></li>
               <li><Link href="/experience" className="text-muted hover:text-warm transition-colors link-draw">Experience</Link></li>
               <li><Link href="/projects" className="text-muted hover:text-warm transition-colors link-draw">Projects</Link></li>
+              <li><Link href="/tools" className="text-muted hover:text-warm transition-colors link-draw">My Stack</Link></li>
+              <li><Link href="/interests" className="text-muted hover:text-warm transition-colors link-draw">Interests</Link></li>
               <li><Link href="/blog" className="text-muted hover:text-warm transition-colors link-draw">Blog</Link></li>
             </ul>
           </div>
